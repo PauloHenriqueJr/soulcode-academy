@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4</title>
+</head>
+<body>
+    <script>
+        /*4.Crie uma função que recebe o ano de nascimento da pessoa informando 
+        se ela é maior de idade(18 anos acima) ou menor (considere 2021)*/
+          
+        ano = parseInt(prompt("Digite a sua idade"));
+
+        function maioridade(ano){
+            idade = 2021 - ano;
+            if(idade>=18){
+                document.write("Maior de idade");
+            }else{
+                document.write("Menor de idade");
+            }
+        }
+        maioridade(ano);
+        
+    </script>
+</body>
+</html>

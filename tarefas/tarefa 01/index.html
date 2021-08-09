@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Vacina</title>
+</head>
+
+<body>
+    <form method="POST" id="my_form"></form>
+    <p>Formulario de vacinação<abbr title="required"></abbr></p>
+<table>
+    <tr>
+        <td>
+            <label for="name">Nome: <abbr title="required" aria-label="required"></abbr></label>
+            <input id="name" type="text" name="name">
+        </td>
+        <td>
+            <label for="datadeatendimento">Data de Atendimento: <abbr title="required" aria-label="required"></abbr></label>
+            <input id="datadeatendimento" type="date" name="datadeatendimento">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="datadenascimento">Data de Nascimento: <abbr title="required" aria-label="required"></abbr></label>
+            <input id="datadenascimento" type="date" name="datadenascimento">
+        </td>
+        <td>
+            <label for="tiposan">Tipo San: <abbr title="required" aria-label="required"></abbr></label>
+            <input id="tiposan" type="text" name="tiposan">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="telefone">Telefone: <abbr title="required" aria-label="required"></abbr></label>
+            <input id="telefone" type="tel" name="telefone">
+        </td>
+        <td>
+            <label for="fatorrh">Fator RH: <abbr title="required" aria-label="required"></abbr></label>
+            <input id="fatorrh" type="text" name="fatorrh">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="email">E-mail: <abbr title="required" aria-label="required"></abbr></label>
+            <input id="email" type="email" name="email">
+        </td>
+        <td>
+            <label for="vacinasaplicadas">Vacinas Aplicadas: <abbr title="required" aria-label="required"></abbr></label>
+            <input id="vacinasaplicadas" type="number" name="vacinasaplicadas">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="adress">Endereço: <abbr title="required" aria-label="required"></abbr></label>
+            <input id="adress" type="adress" name="adress">
+        </td>
+        <td>
+            <label for="emergencycontact">Contato de Emergência: <abbr title="required" aria-label="required"></abbr></label>
+            <input id="emergencycontact" type="number" name="emergencycontact">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="district">Bairro: <abbr title="required" aria-label="required"></abbr></label>
+            <input id="district" type="adress" name="district">
+        </td>
+        <td>
+            <label for="favicolor">Cor:</label>
+            <input type="color" id="favicolor" name="favicolor" value="#FF0000" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="zipcode">Cep: <abbr title="required" aria-label="required"></abbr></label>
+            <input id="zipcode" type="number" name="zipcode">
+        </td>
+        <td>
+            <label for="points">Velocidade de Atendimento</label>
+            <input type="range" name="points" id="points" min="0" max="10"> 
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="state">Estado: <abbr title="required" aria-label="required"></abbr></label>
+            <input id="state" type="adress" name="state">
+        </td>
+        <td>
+            <label for="msg">Observações: <abbr title="required" aria-label="required"></abbr></label>
+            <textarea id="msg"></textarea>
+        </td>
+    </tr>
+</table>
+</body>
+
+</html>

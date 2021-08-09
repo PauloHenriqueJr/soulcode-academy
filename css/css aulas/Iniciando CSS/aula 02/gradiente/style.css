@@ -1,0 +1,87 @@
+#alinhamento{
+  display: flex;
+  flex-direction: column;
+
+}
+
+div{
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  
+
+}
+
+.g1{
+  height: 800px;
+  background-image: linear-gradient(to left, green, red);
+  background-size: auto 20px;
+
+  
+}
+.g2{
+  
+  height: 800px;
+  background-image: linear-gradient(to left, blue, white);
+  background-size: auto 20px;
+}
+.g3{
+
+  height: 800px;
+  background-image: radial-gradient(black 25%, white 25%)
+  
+}
+.g4{
+
+  height: 800px;
+  background-image: radial-gradient(pink 45%, orange 25%)
+  
+}
+.g5{
+  
+  height: 800px;
+  background-image: repeating-radial-gradient(black 0%, white 25%);
+  
+}
+.g6{
+  
+  height: 800px;
+  background-image: repeating-linear-gradient(black 0%, white 25%);
+  
+}
+.g7{
+  
+  height: 800px;
+  background-image: repeating-linear-gradient( black 0%, orange 25%);
+  
+}
+.g8{
+
+  height: 800px;
+  background-image: repeating-radial-gradient(black 0%, green 25%);
+  
+}
+.g9{
+  
+  height: 800px;
+  background-image: radial-gradient(yellow 50%, white 25%)
+  
+}
+.g10{
+  
+  height: 800px;
+  background-image: radial-gradient(yellow 20%, white 50%)
+  
+}
+.g11{
+  
+  height: 800px;
+  background-image: radial-gradient(yellow 50%, blue 25% )
+  
+}
+.g12{
+ 
+  height: 800px;
+  background-image: linear-gradient(to left, blue 25%,black, red);
+  background-size: auto 20px;
+}

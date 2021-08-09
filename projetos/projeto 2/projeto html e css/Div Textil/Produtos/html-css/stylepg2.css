@@ -1,0 +1,269 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*Estilizando o cabeçalho da página*/
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 6vw;
+    background-image: linear-gradient(white, lightgray);
+}
+
+button {
+    font-size: 14px;
+    font-family: 'Lucida Sans Unicode';
+    width: 100px;
+    height: 30px;
+    border-width: 0px;
+    color: white;
+    border-color: rgba(0, 0, 0, 1);
+    background: rgba(0, 0, 0, 1);
+    box-shadow: 3px 3px 10px rgb(99, 98, 98);
+}
+  
+button:hover {
+    color: black;
+    border-color: white;
+    background: white;
+}
+
+#bsearch {
+    border-color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 10px rgb(75, 74, 74);
+}
+  
+/* Estilizando logo e caixa de pesquisa */
+#conteiner1{
+    width: 100%;
+    height: 6vw;
+    display: flex;
+    flex-direction: row;
+    flex-direction: nowrap;
+    background-image: linear-gradient(white);
+    justify-content: space-between;
+    align-content: space-between;
+    align-items:center;
+}
+#c1_filho1{
+    height: 6vw;
+    margin-left: 10%;
+}
+#logo{
+    height: 6vw;
+}
+
+#c1_filho2{
+    margin-right: 10%;   
+}
+/* Estilizando a lista */
+#menu{
+    width: 100%;
+    height: 3vw;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 2px 10px black ;
+    align-items:center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+#menu li{
+    font-size: 2vw;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+#menu li a{
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+#menu li a:hover{
+    font-weight: bold;
+    text-shadow: 0px 0px 6px #fff;
+}
+
+
+/*Estilizando submenu*/
+.container2{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 0vw;
+}
+#submenu{
+    width: 100%;
+    height: 6vw;
+    background-color: rgb(0, 0, 0);
+    align-items:center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+#submenu li{
+    font-size: 2vw;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+#submenu li a{
+    color: rgb(255, 255, 255);
+}
+#submenu li a:hover{
+    font-weight: bold;
+    text-shadow: 0px 0px 6px rgb(255, 255, 255);
+}
+
+/*Estilizando o corpo da página*/
+main{
+    width: 100%;
+    height: 215vw;
+}
+
+/*Estilizando Produtos*/
+
+/*produto 01*/
+#containerp1, #containerp3{
+    width: 100%;
+    height: 45vw;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+}
+#containerp2, #containerp4{
+    width: 100%;
+    height: 45vw;
+    background-image: linear-gradient(white, lightgray);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+}
+.photop{
+    width: 100%;
+    height: 40vw;
+    box-shadow: 5px 5px 10px black ;
+}
+.textp{
+    background-color: rgb(255, 255, 255);
+    width: 40vw;
+    height: 10w;
+    text-align: justify; 
+    font-size: 1.3vw;
+}
+.textp2{
+    background-color: linear-gradient(white, lightgray);
+    width: 40vw;
+    height: 10w;
+    text-align: justify; 
+    font-size: 1.3vw;
+}
+
+/*Estilizando catalogo*/
+#catalogp{
+    width: 100%;
+    height: 20vw;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items:center;
+}
+.img-01 img, .img-02 img, .img-03 img, .img-04 img{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 10px black ;
+    width: 100%;
+    height: 20vw;
+    
+}
+#text-catalog{
+    width: 100%;
+    height: 5vw;
+    padding: 3;
+    text-align: center; 
+    font-size: 1.3vw;
+}
+
+
+/*Estilizando o rodapé da página*/
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: lightgray;
+    width: 100%;
+    height: 6vw;
+    justify-content: space-between;
+    align-items: center;
+    padding:2vw;  
+}
+.ImgFooter{
+    height: 2vw;
+    margin-left: 2vw;
+}
+
+/*Estilizando Botões*/
+
+.buttonp1{
+    width: 20%;
+    height: 30px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    box-shadow: 10px 10px 10px black ;
+    background-size: 10px;
+    min-width: 15%;
+    max-width: 30%;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#botao{
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+#botao .buttonp2{
+    color: rgb(255, 255, 255);
+    background-color: black;
+    box-shadow: 10px 10px 10px black ;
+    background-size: 5px;
+    min-width: 16%;
+    max-width: 5%;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+
+}
+.whatsapp-ico{
+    fill: rgb(0, 0, 0);
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+    background-color:linear-gradient(white, lightgray);
+    border-radius: 50%;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+    /* box-shadow: 2px 2px 11px rgba(0,0,0,0.7); */
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    z-index: 10;
+}
+
+.whatsapp-ico:hover{
+    box-shadow: 2px 2px 11px rgba(0,0,0,0.7);
+}

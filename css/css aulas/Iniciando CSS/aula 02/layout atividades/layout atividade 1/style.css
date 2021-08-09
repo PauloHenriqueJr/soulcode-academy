@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    width: 100%;
+    height: 200px;
+    background-color: rebeccapurple;
+}
+main{
+    width: 66%;
+    height: 500px;
+    background-color: hsl(103, 95%, 50%);
+    float: left;
+}
+aside{
+    width: 34%;
+    height: 500px;
+    background-color: hsl(313, 87%, 51%);
+    float: right;
+}
+
+.corpo1{
+    width: 50%;
+    height: 100%;
+    background-color: hsl(239, 95%, 50%);
+    float: left;
+}
+.corpo2{
+    width: 50%;
+    height: 100%;
+    background-color: hsl(103, 95%, 50%);
+    float: left;
+}
+
+.rodape1{
+    width: 50%;
+    height: 200px;
+    background-color: rgb(253, 4, 4);
+    float: left;
+}
+.rodape2{
+    width: 50%;
+    height: 200px;
+    background-color: rgb(197, 132, 132);
+    float: left;
+}

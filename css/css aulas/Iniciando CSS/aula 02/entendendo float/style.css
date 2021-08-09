@@ -1,0 +1,16 @@
+div{
+    width: 200px;
+    height: 200px;
+    border: solid 1px;
+    margin: 10px;
+}
+#div1, #div2, #div3, #div5{
+    float: left;
+}
+#div4, #div6{
+    clear: left;
+    float: left;
+}
+.section{
+    margin: 300px;
+}

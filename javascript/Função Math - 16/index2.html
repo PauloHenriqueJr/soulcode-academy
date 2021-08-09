@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //2.Crie um script onde o usuario digite 3 numeros , esse numeros elevados 
+        //a 2 , 3 e 4 , mostre o resultado de cada um deles e a soma das potencias dos 3
+
+        function raiz (){
+
+            number1 = 2;
+            number2 = 3;
+            number3 = 4;
+            
+            valor1 = parseInt(prompt("digite o primeiro valor"));
+            valor2 = parseInt(prompt("digite o segundo valor"));
+            valor3 = parseInt(prompt("digite o terceiro valor"));
+
+            document.write(+valor1+ " elevado a 2 é igual a " +Math.pow(valor1,number1)+ "</br>");
+            document.write(+valor2+ " elevado a 3 é igual a " +Math.pow(valor2,number2)+ "</br>");
+            document.write(+valor3+ " elevado a 4 é igual a " +Math.pow(valor3,number3)+ "</br>");
+
+            document.write("O resultado da soma das potencias é igual a ", Math.pow(valor1,number1)+ Math.pow(valor2,number2)+Math.pow(valor3,number3));
+            
+            return
+        }
+
+        raiz();
+
+    </script>
+</body>
+</html>

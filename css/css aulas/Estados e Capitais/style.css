@@ -1,0 +1,200 @@
+body{
+    background-position: center;
+    background-size: auto;
+    background-attachment: fixed;
+    background-image: url(https://i.pinimg.com/originals/ea/6c/aa/ea6caa1982e68bcd43aa575058a0c35e.png);
+}
+
+#estados{
+    border-style: solid;
+    text-align: start;
+    border: hidden;
+    max-width: auto;
+    
+   
+}
+#estados img{
+    width:200px;
+    height:200px;
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    text-align: left;
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-variant: small-caps;
+}
+
+div{
+    border-style: none;
+    margin: 10px 10px 10px 10px;
+}
+
+/*estados*/
+
+div .df{
+    border: 10px;
+    border-color: green;
+    border-style: solid;
+    box-shadow: 10px 10px 10px yellow;
+}
+div .mt{
+    border: 10px;
+    border-color:blue;
+    border-style: solid;
+    box-shadow: 10px 10px 10px yellow;
+}
+div .goias{
+    border: 10px;
+    border-color:orange;
+    border-style: solid;
+    box-shadow: 10px 10px 10px yellow;
+}
+div .mg{
+    border: 10px;
+    border-color: green;
+    border-style: solid;
+    box-shadow: 10px 10px 10px green;
+}
+div .alagoas{
+    border: 10px;
+    border-color:blue;
+    border-style: solid;
+    box-shadow: 10px 10px 10px orange;
+}
+div .piaui{
+    border: 10px;
+    border-color:orange;
+    border-style: solid;
+    box-shadow: 10px 10px 10px orange;
+}
+div .pb{
+    border: 10px;
+    border-color: green;
+    border-style: solid;
+    box-shadow: 10px 10px 10px orange;
+}
+div .rs{
+    border: 10px;
+    border-color:blue;
+    border-style: solid;
+    box-shadow: 10px 10px 10px blue;
+}
+div .bahia{
+    border: 10px;
+    border-color:orange;
+    border-style: solid;
+    box-shadow: 10px 10px 10px orange;
+}
+div .paraiba{
+    border: 10px;
+    border-color: green;
+    border-style: solid;
+    box-shadow: 10px 10px 10px orange;
+}
+div .am{
+    border: 10px;
+    border-color:blue;
+    border-style: solid;
+    box-shadow: 10px 10px 10px rgb(66, 255, 66);
+}
+div .es{
+    border: 10px;
+    border-color:orange;
+    border-style: solid;
+    box-shadow: 10px 10px 10px green;
+}
+div .parana{
+    border: 10px;
+    border-color: green;
+    border-style: solid;
+    box-shadow: 10px 10px 10px blue;
+}
+div .roraima{
+    border: 10px;
+    border-color:blue;
+    border-style: solid;
+    box-shadow: 10px 10px 10px rgb(66, 255, 66);
+}
+div .rn{
+    border: 10px;
+    border-color:orange;
+    border-style: solid;
+    box-shadow: 10px 10px 10px orange;
+}
+div .ceara{
+    border: 10px;
+    border-color: green;
+    border-style: solid;
+    box-shadow: 10px 10px 10px orange;
+}
+div .ms{
+    border: 10px;
+    border-color:blue;
+    border-style: solid;
+    box-shadow: 10px 10px 10px yellow;
+}
+div .rj{
+    border: 10px;
+    border-color:orange;
+    border-style: solid;
+    box-shadow: 10px 10px 10px green;
+}
+div .para{
+    border: 10px;
+    border-color: green;
+    border-style: solid;
+    box-shadow: 10px 10px 10px rgb(66, 255, 66);
+}
+div .sergipe{
+    border: 10px;
+    border-color:blue;
+    border-style: solid;
+    box-shadow: 10px 10px 10px orange;
+}
+div .rondonia{
+    border: 10px;
+    border-color:orange;
+    border-style: solid;
+    box-shadow: 10px 10px 10px rgb(66, 255, 66);
+}
+div .tocantins{
+    border: 10px;
+    border-color: green;
+    border-style: solid;
+    box-shadow: 10px 10px 10px rgb(66, 255, 66);
+}
+div .acre{
+    border: 10px;
+    border-color:blue;
+    border-style: solid;
+    box-shadow: 10px 10px 10px rgb(66, 255, 66);
+}
+div .sc{
+    border: 10px;
+    border-color:orange;
+    border-style: solid;
+    box-shadow: 10px 10px 10px blue;
+}
+div .sp{
+    border: 10px;
+    border-color: green;
+    border-style: solid;
+    box-shadow: 10px 10px 10px green;
+}
+div .amapa{
+    border: 10px;
+    border-color:blue;
+    border-style: solid;
+    box-shadow: 10px 10px 10px rgb(66, 255, 66);
+}
+div .ma{
+    border: 10px;
+    border-color:orange;
+    border-style: solid;
+    box-shadow: 10px 10px 10px orange;
+}

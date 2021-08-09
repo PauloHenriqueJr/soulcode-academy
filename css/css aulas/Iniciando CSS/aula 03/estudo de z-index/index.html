@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Entendendo a propriedade z-index</title>
+    <style type="text/css">
+      #posiciona1 {
+        background-color: #f00;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 40px;
+      }
+      #posiciona2 {
+        background-color: #0f0;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 65px;
+        z-index: 4;
+      }
+      #posiciona3 {
+        background-color: #00f;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 100px;
+      }
+       #posiciona4 {
+        background-color: rgb(255, 217, 0);
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 65px;
+        z-index: 4;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="posiciona1"></div>
+    <div id="posiciona2"></div>
+    <div id="posiciona3"></div>
+    <div id="posiciona4"></div>
+  </body>
+</html>

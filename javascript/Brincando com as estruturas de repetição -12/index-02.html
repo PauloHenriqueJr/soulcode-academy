@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade 02</title>
+</head>
+
+<body>
+    <script>
+        /* 2 - Desenvolver um algoritmo onde o usuário determina quantidade de valores que 
+    será solicitado ao usuário. Calcule e escreva a
+    média aritmética dos valores lidos, a quantidade de valores positivos, 
+    a quantidade de valores negativos.*/
+
+        var media = 0;
+        var positivo = 0;
+        var negativo = 0;
+        var valor = 0;
+
+        valor = parseInt(prompt("Diga a quantidade de valores:"));
+
+        for (i = 1; i <= valor; i++) {
+            numero = parseInt(prompt("Digite o numero: " +i))
+            media = media + numero
+            if (numero >= 0) {
+                positivo++;
+
+            } else {
+                negativo++
+            }
+        }
+        document.write("positivo:" + positivo, "<br>")
+        document.write("negativo:" + negativo, "<br>")
+        document.write("media:" + media / valor)
+    </script>
+</body>
+
+</html>

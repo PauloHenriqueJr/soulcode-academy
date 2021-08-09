@@ -1,0 +1,388 @@
+/* Elementos gerais da página */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/*Estilizando o cabeçalho da página*/
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 9vw;
+    z-index: 10;
+}
+/* Estilizando logo e caixa de pesquisa */
+#conteiner1{
+    width: 100%;
+    height: 6vw;
+    display: flex;
+    flex-direction: row;
+    flex-direction: nowrap;
+    background-image: linear-gradient(white, lightgray);
+    justify-content: space-between;
+    align-content: space-between;
+    align-items:center;
+}
+#c1_filho1{
+    height: 6vw;
+    margin-left: 10%;
+}
+#logo{
+    height: 6vw;
+}
+#c1_filho2{
+    margin-right: 10%;
+}
+/* Estilizando a lista */
+
+#conteiner2{
+    width: 100%;
+    height: 3vw;
+    background-color: black;
+    align-items:center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+li{
+    list-style-type: none;
+    font-size: 2vw;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0px 0px 6px #fff;
+}
+
+button {
+    font-size: 14px;
+    font-family: 'Lucida Sans Unicode';
+    width: 100px;
+    height: 30px;
+    border-width: 0px;
+    color: white;
+    border-color: rgba(0, 0, 0, 1);
+    background: rgba(0, 0, 0, 1);
+    box-shadow: 3px 3px 10px rgb(99, 98, 98);
+}
+
+button:hover {
+    color: black;
+    border-color: white;
+    background: white;
+}
+
+#bsearch {
+    border-color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 10px rgb(75, 74, 74);
+}
+
+/* Conteúdo principal */
+
+main{
+    width: 100%;
+    height: auto;
+}
+
+/* Conteúdo de vídeo (corpo da página)*/
+
+.espaco_video {
+    margin: 0 auto;
+    height: 95vh;
+    width: 85vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+}
+
+@media (min-width: 400px) {
+    #video {
+        width: 500px; 
+        height: 200px;
+    }
+    .espaco_video {
+        height: 55vh;
+        width: 45vw;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up */
+@media (min-width: 576px) {
+    #video {
+        width: 600px; 
+        height: 300px;
+    }
+    .espaco_video {
+        height: 65vh;
+        width: 55vw;
+    }
+}
+
+/* Medium devices (tablets, 768px and up */
+@media (min-width: 768px) {
+    #video {
+        width: 700px; 
+        height: 400px;
+    }
+    .espaco_video {
+        height: 75vh;
+        width: 65vw;
+    }
+}
+
+/* Large devices (desktops, 992px and up */
+@media (min-width: 992px) { 
+    #video {
+        width: 800px; 
+        height: 500px;
+    }
+    .espaco_video {
+        height: 85vh;
+        width: 75vw;
+    }
+}
+
+/* Extra large devices large desktops, 1200px and up */
+@media (min-width: 1200px) {
+    #video {
+        width: 900px; 
+        height: 600px;
+    }
+    .espaco_video {
+        height: 95vh;
+        width: 85vw;
+    }
+}
+
+/* Estilizando Caixas */
+    /* Conteúdo principal */
+    #principal {
+        width: 98vw;
+        margin: 0 auto;
+        margin-bottom: 20vh;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 7vw;
+        font-size: 1.3vw;
+    }
+
+    /* Classe para formatar todas as caixas */
+    .box {
+        width: 50vw;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    /* Caixa com imagem */
+    .box1 {
+        height: 17vh;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        width: 90vw;
+        margin: 0 auto;
+        z-index: 1;
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: lightgray;
+    }
+
+    #imagem {
+        height: 17vh;
+        width: 100vw;
+    }
+
+    /* Caixa com display flex */
+    .box2 {
+        border: 4px solid rgb(119, 13, 13);
+        margin-top: 10vh;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 7;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        z-index: 4;
+    }
+
+    #box2-flex { /* Caixa com texto da box2 */
+        width: 25vw;
+        height: 50vh;
+        padding: 2vw;
+        margin-top: 43vh;
+        margin-bottom: 2vh;
+    }
+
+
+    /* Caixa com texto box3*/
+
+    .box3 {
+        background-color: #000000;
+        color: white;
+        height: 30vh;
+        width: 40vw;
+        margin-left: 5vw;
+        padding: 10vh;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        z-index: 5;
+        
+        }
+    
+        /* Caixas visuais  */
+    .box4 {
+        grid-row-start: 3;
+        grid-row-end: 8;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        background-color: lightgray;
+        width: 30vw;
+        margin-top: 10vh;
+        margin-left: 20vw;
+        z-index: 3;
+    }
+
+    .box5 {
+        grid-row-start: 7;
+        grid-column-start: 2;
+        background-color: #000000;
+        z-index: 2;
+        margin-left: 20vw;
+        margin-top: 10vh;
+        height: 9vh;
+        width: 18vw;
+    }
+
+/* Banner */
+
+#banner{
+    background: black url("./Imagens/rolinho2.png");
+    width: 100%;
+    height: 50vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+    min-width: 500px;
+}
+
+#caixa_imagens {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+}
+
+.imagens {
+    width: 15vw;
+    height: 15vw;
+    border-radius: 100%;
+}
+
+figcaption {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1vw;
+}
+
+.imagens:hover {
+    border: 3px solid black;
+}
+
+.link_unidades  {
+    color: #000000;
+}
+
+#texto {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    padding: 10px;
+    height: auto;
+    width: 50vw;
+    font-size: 1.3vw;
+    text-align: center;
+}
+
+h1 {
+    font-family: cursive;
+}
+
+#paragrafo {
+    font-weight: 500;
+}
+
+#botao {
+    width: 100vw;
+    margin-top: 1vh;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+#botao a {
+    background-color: black;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 1.3vw;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+}
+
+
+/*Estilizando o rodapé da página*/
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: lightgray;
+    width: 100%;
+    height: 6vw;
+    justify-content: space-between;
+    align-items: center;
+    padding:2vw;  
+}
+.ImgFooter{
+    height: 2vw;
+    margin-left: 2vw;
+}
+
+.whatsapp-ico{
+    fill: rgb(0, 0, 0);
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+    background-color:linear-gradient(white, lightgray);
+    border-radius: 50%;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+    /* box-shadow: 2px 2px 11px rgba(0,0,0,0.7); */
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    z-index: 10;
+}
+
+.whatsapp-ico:hover{
+    box-shadow: 2px 2px 11px rgba(0,0,0,0.7);
+}
+
+
+
+
+
+

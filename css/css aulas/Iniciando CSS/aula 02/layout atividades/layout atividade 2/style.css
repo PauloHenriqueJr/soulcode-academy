@@ -1,0 +1,63 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    width: 60%;
+    height: 200px;
+    background-color: rebeccapurple;
+    float: left;
+}
+
+#aside_esq{
+    width: 20%;
+    height: 600px;
+    background-color: hsl(313, 37%, 64%);
+    float: left;
+}
+#aside_dir_s{
+    width: 20%;
+    height: 300px;
+    background-color: hsl(165, 87%, 51%);
+    float: right;
+    
+}
+#aside_dir_i{
+    width: 20%;
+    height: 300px;
+    background-color: hsl(96, 87%, 51%);
+    float: right;
+    
+}
+.corpo1{
+    width: 20%;
+    height: 200px;
+    background-color: hsl(239, 95%, 50%);
+    float: left;
+    
+}
+.corpo2{
+    width: 20%;
+    height: 200px;
+    background-color: hsl(103, 95%, 50%);
+    float: left;
+}
+.corpo3{
+    width: 20%;
+    height: 200px;
+    background-color: hsl(0, 75%, 41%);
+    float: left;
+}
+
+.rodape1{
+    width: 30%;
+    height: 200px;
+    background-color: rgb(253, 4, 4);
+    float: left;
+}
+.rodape2{
+    width: 30%;
+    height: 200px;
+    background-color: rgb(197, 132, 132);
+    float: left;
+}

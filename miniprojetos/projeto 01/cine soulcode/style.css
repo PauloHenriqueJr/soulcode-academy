@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Tourney&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Otomanopee+One&family=Tourney&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Otomanopee+One&family=Tourney&family=Ubuntu&display=swap");
+
+body,
+p,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  font-family: "Tourney", cursive;
+  font-size: 100px;
+  padding: 50px;
+}
+
+main {
+  padding: 50px;
+}
+
+header img {
+  height: 200px;
+}
+
+section {
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+}
+
+footer {
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+section p {
+  padding: 30px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  background-color: rgb(165, 1, 2);
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 1%;
+}
+
+.menu li {
+  display: inline;
+}
+
+.menu li a {
+  color: black;
+  padding: 30px;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Otomanopee One", sans-serif;
+}
+
+.menu li a:hover {
+  background-color: white;
+  transition: 1s;
+}
+
+/* Natali (fale conosco) */
+
+.faleconosco {
+  padding: 120px;
+  text-align: center;
+}

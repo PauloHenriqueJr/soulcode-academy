@@ -1,0 +1,19 @@
+body{
+    width: 100%;
+    margin: auto;
+}
+section{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+div{
+    background-color: lawngreen;
+    width: 100%;
+    text-align: center;
+    border: solid 1px;
+    margin: 10px;
+    
+}

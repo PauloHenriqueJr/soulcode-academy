@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         //2.Crie uma função que recebe o ano de nascimento da pessoa informando
+         //se ela é maior de idade(18 anos acima) ou menor (considere 2021).
+         //Controle : o usuário não pode digitar idade negativa ou acima de 130 anos por exemplo
+
+         anonascimento = parseInt(prompt("Digite o ano que você nasceu"));
+         anoatual = 2021
+         idade = anoatual - anonascimento;
+
+        function maior_menor_idade(anoatual){
+            
+            if(idade < 0 || idade > 130 || idade == " " || anonascimento > anoatual || isNaN(idade)){
+                alerta("Idade invalida");
+            }else if(idade>=18){
+                document.write("Você é maior de idade");
+            }else{
+                document.write("Você é menor de idade");
+            }
+        }
+        maior_menor_idade(anoatual);
+    </script>
+</body>
+</html>

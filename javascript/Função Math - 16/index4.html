@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //4.Crie um script onde o usuario digite um numero e esse mesmo seja subtraido de um numero randomico(0 - 1000) e mostre na tela o resultado absoluto 
+        //do mesma bem como o numero escolhido pelo usuario e o numero randomico
+
+        valor = prompt("Digite o primeiro número:");
+        valor_rand = Math.random() * 1000;
+        div = (valor - valor_rand);
+
+        document.write(
+            "O número escolhido foi: ", valor, "</br>",
+            "O número randômico foi: ", valor_rand, "</br>",
+            "O resultado absoluto da subtração foi: ", Math.abs(div), ".");
+
+    </script>
+</body>
+
+</html>

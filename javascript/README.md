@@ -6,7 +6,7 @@ h1 align="center">
 
 ## 💬 Sobre 
 
-<p align="justify">Este repositório tem como objetivo armazenar todo conteudo sobre Css proposto pela SoulCode Academy</p>
+<p align="justify">Este repositório tem como objetivo armazenar todo conteudo sobre JavaScript proposto pela SoulCode Academy</p>
 
 
 

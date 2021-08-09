@@ -7,7 +7,7 @@
 
 ## 💬 Sobre 
 
-<p align="justify">Este repositório tem como objetivo armazenar todos os projetos, cursos e desafios feitos pela SoulCode Academy</p>
+<p align="justify">Este repositório tem como objetivo armazenar todos os projetos, cursos e desafios propostos pela SoulCode Academy</p>
 
 
 

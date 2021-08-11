@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="eventsGroup.js"></script>
+        <title>Events JS</title>
+    </head>
+    
+    <body id="corpo" onload="onLoad()">
+
+        <button onclick="modoNoturno()">Ativar Modo Noturno</button>
+        <button onclick="modoClaro()">Ativar Modo Claro</button>
+
+        <button id="botaoAumentaFonte">A +</button>
+        <button id="botaoDiminuiFonte">A -</button>
+
+        <section>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ullam inventore sed natus voluptates quo ut officia voluptatum cupiditate sequi odit quis aperiam dolorem accusantium magni id, excepturi modi nulla dicta pariatur libero eos repellendus voluptatem tempore! Consectetur nesciunt dolor, earum quo modi, accusantium reiciendis, quis eos a tempora reprehenderit?
+            </p>
+    
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ullam inventore sed natus voluptates quo ut officia voluptatum cupiditate sequi odit quis aperiam dolorem accusantium magni id, excepturi modi nulla dicta pariatur libero eos repellendus voluptatem tempore! Consectetur nesciunt dolor, earum quo modi, accusantium reiciendis, quis eos a tempora reprehenderit?
+            </p>
+        </section>
+
+        <form action="" id="formulario" name="formulario" method="POST">
+            <div>
+                <label for="idade">Idade:</label>
+                <input type="text" name="idade" id="idade" placeholder="Informe sua idade" onblur="validaIdade()" required oninvalid="validaIdade()">
+            </div>
+        </form>
+        <form action="" id="email" name="email" method="POST">
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="text" name="email" id="email" placeholder="Informe seu e-mail" onblur="email()" required oninvalid="email()">
+            </div>
+        </form>
+
+        <!-- Crie uma página onde deve ter os seguintes requisitos:
+            Botão de modo noturno;
+            Botão de acessibilidade para pessoas que não conseguem ver com fontes pequenas;
+            Formulário dinâmico, se os dados digitados estiverem corretos o campo fica verde, se invalido fica vermelho(se digitar idade invalida, o campo do input fica vermelho).
+            Incluir pelo menos 4 eventos diferente dos visto durante a aula. -->
+            <script src="eventsGroup.js"></script>
+    </body>
+</html>

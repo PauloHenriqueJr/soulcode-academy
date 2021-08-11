@@ -1,0 +1,23 @@
+button {
+    width: 50%;
+    height: 50px;
+    background: #8cddbe;
+    color: #018568;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgb(71, 124, 104);
+    text-shadow: none;
+    font-size: 25px;
+    font-family: Georgia;
+}
+
+button:hover {
+    background: #018568;
+    color: #8cddbe;;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgb(71, 124, 104);
+    text-shadow: none;
+    font-size: 28px;
+    font-family: Georgia;
+}

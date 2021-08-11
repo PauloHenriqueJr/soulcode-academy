@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+            function vetores() {
+
+                var S = ["A", "b", "B", "C", "c", 1, 2, 3]; 
+                document.write("S= [",S,"]</br>"); ////Exiba na tela S = [A, b, B, C, c, 1, 2, 3];
+                
+                S.unshift("a"); //Insira na primeira posição do vetor o elemento "a"
+                document.write("S= [",S,"]</br>"); //Exiba na tela S = [a, A, b, B, C, c, 1, 2, 3];
+
+                S.push(4);//Insira na ultima posição do vetor o elemento "4"
+                document.write("S= [",S,"]</br>"); //Exiba na tela S = [a, A, b, B, C, c, 1, 2, 3, 4];
+
+                S.splice(5, 1);//Remova o elemento "c" do vetor
+                document.write("S= [",S,"]</br>"); //Exiba na tela S = [a, A, b, B, C, 1, 2, 3, 4];
+
+                S.shift();//Remova o primeiro elemento do vetor
+                document.write("S= [",S,"]</br>"); //Exiba na tela S = [A, b, B, C, 1, 2, 3, 4];
+
+                S.pop();//Remova o ultimo elemento do vetor 
+                document.write("S= [",S,"]</br>"); //Exiba na tela S = [A, b, B, C, 1, 2, 3];
+
+                
+            }
+
+            vetores();
+
+    </script>
+</body>
+
+</html>

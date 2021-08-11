@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando uma mega-sena com JavaScript</title>
+</head>
+
+<body>
+    <button value="Clique aqui" onclick="sorteio()">Descubra seus numeros da sorte</button>
+    <script>
+/*Crie uma página que sorteia um conjunto de números válidos para um jogo da mega sena. 
+Para a mega sena o mínimo são 6 números, todos contidos no intervalo de 1 a 60, 
+incluindo ambos 1 e 60.
+
+Nível 1: usando a função Math.random()
+
+
+Nível 2: crie uma função random sua para gerar os números. */
+
+
+        function aleatorio() {
+            return Math.round(Math.random() * 100)
+        }
+
+        //Função randon criada para gerar os numeros
+
+        function sorteio() {
+           var megasena = [];
+           var numero = 1;
+
+            while (numero <= 6) {
+
+                var num_aleatorio = aleatorio();
+                var achou = false;
+
+                if (num_aleatorio !== 0 && num_aleatorio <= 60) {
+
+                    for (i = 0; i < 60; i++) {
+
+                        if (megasena[i] == num_aleatorio) {
+
+                            achou = true
+                            break
+                        }
+                    }
+
+                    if (achou == false) {
+
+                        megasena.push(num_aleatorio);
+                        numero++
+                    }
+
+                }
+
+            }
+
+            document.write("Seus numeros da sorte validos são: " +megasena+ "</br>")
+        }
+    </script>
+</body>
+
+</html>

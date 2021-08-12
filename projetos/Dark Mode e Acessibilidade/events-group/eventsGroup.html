@@ -38,12 +38,12 @@
                     <form action="" id="formulario" name="formulario" method="POST">
                         <div>
                             <label for="">Nome:</label>
-                            <input type="text" name="nome" id="nome" placeholder="Nome">
+                            <input type="text" name="nome" id="nome" placeholder="Nome" onblur="validaNome()">
                         </div>
     
                         <div>
                             <label for="email">Email:</label>
-                            <input type="email" name="email" id="email" placeholder="Email">
+                            <input type="email" name="email" id="email" placeholder="Email" onblur="validacaoEmail(this)">
                         </div>
     
                         <div>
@@ -70,7 +70,7 @@
 
         <footer>
             <section>
-                <span>Bruno Frontin, Marina Toledo, Paulo Henrique, Rebeca Palmeira</span>
+                <span>Bruno Frontin | Marina Toledo | Paulo Henrique | Rebeca Palmeira</span>
                 <span>Copyrigth &copy; 2021</span>
             </section>           
         </footer>

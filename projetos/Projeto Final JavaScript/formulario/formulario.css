@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+img.logo {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    width: 3%;
+    cursor: pointer;
+}
+
+body {
+    background-color: #5fbaa7;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 40px;
+}
+
+main {
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+    background-color: #5fbaa7;
+}
+
+section {
+    margin: auto;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+div {
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    flex-grow: 4;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+}
+
+form div {
+    border: solid 1px rgb(0, 0, 0);
+}
+
+.aumentar1 {
+    width: 5%;
+    flex-grow: 2;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    flex-grow: 2;
+}
+
+.aumentar2 {
+    width: 100%;
+    flex-grow: 2;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    flex-grow: 2;
+}
+
+.aumentar3 {
+    width: 9%;
+    flex-grow: 2;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    flex-grow: 2;
+}
+
+.aumentar4 {
+    flex-grow: 2;
+    margin: 10px;
+    flex-grow: 2;
+    border-radius: 22px;
+    /* borda dos botoes*/
+}
+
+.item1 {
+    width: 100%;
+    height: 100%;
+}
+
+.item2 {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    /* borda dos botoes*/
+}
+input{
+    padding-left: 1vw;
+}
+
+select:focus,
+input:focus,
+button:focus {
+    outline: 0;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* dive oculta*/
+#bem-vindo {
+    color: black;
+    font-size: large;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+#bem-vindo p {
+    padding: 3vh 3vw;
+}
+
+#retorno {
+    border-radius: 22px;
+}

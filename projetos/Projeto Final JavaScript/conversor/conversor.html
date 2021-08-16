@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calculadora da taxa de câmbio</title>
+    <link rel="stylesheet" href="conversor.css" />
+</head>
+
+<body>
+    <a href="/index/index.html"><img class="logo" src="/images/botao-voltar.png" alt="Logo"></a>
+    <main>
+        <img src="/images/money.png" alt="" class="money-img" />
+        <h1>Calculadora de taxa de câmbio</h1></br>
+        <p>Escolha a moeda e os valores para obter a taxa de câmbio</p>
+
+        <div class="container">
+
+            <div class="moeda">
+                <input type="number" id="valor-um" placeholder="Insira o valor... " min="0" step = "0.01"
+                    oninput="validity.valid||(value='');" />
+
+                <select id="moeda-um">
+                    <option value="USD">USD</option>
+                    <option value="ARS">ARS</option>
+                    <option value="BRL" selected>BRL</option>
+                    <option value="CAD">CAD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                </select>
+
+            </div>
+
+            <div class="moeda">
+                <input type="number" id="valor-dois" placeholder="Aguardando valor..." min="0" oninput="validity.valid||(value='');" />
+
+                <select id="moeda-dois">
+                    <option value="USD" selected>USD</option>
+                    <option value="ARS">ARS</option>
+                    <option value="BRL">BRL</option>
+                    <option value="CAD">CAD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                </select>
+
+            </div>
+
+            <div class="container-trocar-taxa">
+                <button class="btn" id="trocar">Trocar</button>
+                <div class="taxa" id="taxa"></div>
+            </div>
+
+        </div>
+    </main>
+    <script src="conversor.js"></script>
+    <script src="acessibilidade.js"></script>
+</body>
+
+</html>

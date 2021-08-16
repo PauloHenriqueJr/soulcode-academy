@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Pagina de Cadastro</title>
+</head>
+
+<body>
+    <a href="/index/index.html"><img class="logo" src="/images/botao-voltar.png" alt="Logo"></a>
+    <h1>Página de Cadastro</h1>
+    <main>
+        <form action="" method="POST">
+            <section>
+                <div>
+                    <input class="item1" type="text" name="name" id="name" onblur="validaNome(this)"
+                        placeholder="Nome completo">
+                </div>
+                <div class="aumentar1">
+                    <input class="item1" type="text" id="cpf" onblur="validaCPF(this)" placeholder="123.456.789-00">
+                </div>
+            </section>
+            <section>
+                <div class="aumentar2">
+                    <input class="item1" type="number" id="day" placeholder="Dia" min="1" max="31"
+                        onblur="validaDia(this)" oninput="validity.valid||(value='');" maxlength="2">
+                    <!--maxleng limita campo de dia para 2 digitos-->
+                </div>
+                <div class="aumentar2">
+                    <select class="item1" style="background-color: rgb(255, 255, 255);" id="month"
+                        onblur="validaMes(this)">
+                        <option value="" disabled selected hidden>Mês</option>
+                        <option value="1">Janeiro</option>
+                        <option value="2">Fevereiro</option>
+                        <option value="3">Março</option>
+                        <option value="4">Abril</option>
+                        <option value="5">Maio</option>
+                        <option value="6">Junho</option>
+                        <option value="7">Julho</option>
+                        <option value="8">Agosto</option>
+                        <option value="9">Setembro</option>
+                        <option value="10">Outubro</option>
+                        <option value="11">Novembro</option>
+                        <option value="12">Dezembro</option>
+                    </select>
+                </div>
+                <div class="aumentar2">
+                    <!--Year-->
+                    <input class="item1" type="number" id="year" placeholder="Ano" maxlength="4" onblur="validaAno()">
+                    <!--maxleng limita campo de anno para 4 digitos-->
+                </div>
+            </section>
+            <section>
+                <div>
+                    <!--E-mail-->
+                    <input class="item1" type="email" id="email" onblur="validacaoEmail(this)" placeholder="E-mail"
+                        size="29px">
+
+                </div>
+                <div class="aumentar3">
+                    <!--Gender-->
+                    <select class="item1" style="background-color: rgb(255, 255, 255);" id="gender"
+                        onblur="validaGenero(this)">
+                        <option value="" disabled selected hidden>Sexo</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="Não informado">Não informado</option>
+                    </select>
+                </div>
+
+            </section>
+
+            <section>
+                <div class="aumentar4">
+                    <!--Botão reset-->
+                    <button class="item2" onclick="resetFlags()">Resetar formulário</button>
+                </div>
+
+
+                <div class="aumentar4">
+                    <!--Botão enviar-->
+                    <button class="item2" type="submit" onclick="mostra(event)">Enviar Mensagem</button>
+                </div>
+
+            </section>
+
+        </form>
+        <section>
+            <div class=" aumentar4 " id="retorno">
+                <a href="/index/index.html"><button class="item2" >Retornar a pagina principal</button><a href="/index/index.html"></a>
+            </div>
+        </section>
+
+
+        <!--Dive oculta de boas vindas-->
+
+        <div id="bem-vindo">
+        </div>
+
+    </main>
+    <script src="formulario.js"></script>
+</body>
+
+</html>

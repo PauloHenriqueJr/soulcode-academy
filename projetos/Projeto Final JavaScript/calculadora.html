@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/calculadora.css">
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <img class="logo" src="./assets/images/botao-voltar.png" onclick="window.location='index.html';" alt="Logo">
+    <div class="calculadora">
+        <div id="recursos">
+            <a href="#" id="modoClaro" onclick="modoClaro()"><img src="./assets/images/icon_sun.png" alt=""></a>
+            <a href="#" id="modoEscuro" onclick="modoEscuro()"><img src="./assets/images/icon_moon.png" alt=""></a>
+        </div>
+
+        <div class="display" id="display"></div>
+
+        <div class="calculadora-buttons">
+
+            <button class="hidden" id="eleve2" onclick="insert('**2')">n²</button>
+            <button class="hidden" id="eleve3" onclick="insert('**3')">n³</button>
+
+            <button class="hidden" id="raiz" onclick="raiz('√')">√</button>
+
+            <button class="hidden" id="pi" onclick="insert('3.14159265359')">π</button>
+
+            <button onclick="cientifica()">√yx</button>
+
+            <button id="limpCalc" onclick="clean()">C</button>
+            <button id="backspace" onclick="back()">«</button>
+            <button id="dividir" onclick="insert('/')">/</button>
+
+            <button id="but7" onclick="insert('7')">7</button>
+            <button id="but8" onclick="insert('8')">8</button>
+            <button id="but9" onclick="insert('9')">9</button>
+
+            <button id="multiplica" onclick="insert('*')">x</button>
+
+            <button id="but4" onclick="insert('4')">4</button>
+            <button id="but5" onclick="insert('5')">5</button>
+            <button id="but6" onclick="insert('6')">6</button>
+
+            <button id="menos" onclick="insert('-')">-</button>
+
+            <button id="but1" onclick="insert('1')">1</button>
+            <button id="but2" onclick="insert('2')">2</button>
+            <button id="but3" onclick="insert('3')">3</button>
+
+            <button id="mais" onclick="insert('+')">+</button>
+
+            <button id="maisoumenos" onclick="inverte()">±</button>
+
+            <button id="but0" onclick="insert('0')">0</button>
+            <button id="virgula" onclick="insert('.')">,</button>
+
+            <button id="igual" onclick="calcular('=')">=</button>
+
+        </div>
+    </div>
+    <script src="./assets/script/calculadora.js"></script>
+
+
+    
+</body>
+
+</html>

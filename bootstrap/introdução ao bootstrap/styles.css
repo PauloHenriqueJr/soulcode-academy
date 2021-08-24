@@ -1,0 +1,68 @@
+.main-head {
+    background-color: aquamarine;
+    grid-area: header;
+  }
+  .content {
+    background-color: aquamarine;
+    grid-area: content;
+  }
+  .main-nav {
+    background-color: aquamarine;
+    grid-area: nav;
+  }
+  .side {
+    background-color: aquamarine;
+    grid-area: sidebar;
+  }
+  .ad {
+    background-color: aquamarine;
+    grid-area: ad;
+  }
+  .main-footer {
+    background-color: aquamarine;
+    grid-area: footer;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+      "header"
+      "nav"
+      "content"
+      "sidebar"
+      "ad"
+      "footer";
+  }
+
+  @media (min-width: 500px) {
+    .wrapper {
+        background-color: rgb(119, 179, 96);
+      grid-template-columns: 1fr 3fr;
+      grid-template-areas: 
+        "header  header"
+        "nav     nav"
+        "sidebar content"
+        "ad      footer";
+    }
+    nav ul {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  @media (min-width: 700px) {
+    .wrapper {
+        background-color: rgb(255, 41, 4);
+      grid-template-columns: 1fr 4fr 1fr;
+      grid-template-areas: 
+        "header header  header"
+        "nav    content sidebar"
+        "nav    content ad"
+        "footer footer  footer"
+     }
+     nav ul {
+        background-color: rgb(127, 129, 255);
+       flex-direction: column;
+     }
+  }

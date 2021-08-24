@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="./assets/css/other.jquery-ui.css">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/cadastro_estilo.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="./assets/js/cadastro.js"></script>
+    <script src="./assets/libs/jquery-ui.js"></script>
+    <script src="./assets/js/fontsize.js"></script>
+    <script src="./assets/libs/jquery.mask.min.js"></script>
+    <title>Cadastre-se</title>
+</head>
+
+<body>
+    <section class="time"></section>
+    <header>
+        <nav>
+            <ul id="header">
+                <ul>
+                    <li class="logo_li"><img  onclick="window.location='home.html';" src="./images/LOGO.png" alt="">
+                    </li>
+                    <li class="fix_img_text" >SAÚDE</li>
+                </ul>
+                <ul id="accessibility">
+                    <li id="decrease-font">A-</li>
+                    <li id="increase-font">A+</li>
+                </ul>
+            </ul>
+        </nav>
+    </header>
+    <nav>
+        <ul id="horizontal_menu">
+            <li><a href="aboutUs.html">QUEM SOMOS</a></li>
+            <li><a href="cadastro.html">FORMULARIO</a></li>
+            <li><a href="leito.html">LEITOS</a></li>
+            <li><a href="galeria.html">GALERIA</a></li>
+        </ul>
+        
+    </nav>
+
+    <main>
+       
+        <section class="cadastro">
+            <section id="center">
+                <section id="topo_cadastro">
+                    <p style="background-color: #EBF2F0">
+                        
+                    </p>
+                    <div id="progressbar">Progresso</div>
+                </section>
+                </div>
+                <h3>Dados Pessoais</h3>
+                <form>
+                    <input id="nome" type="text" placeholder="Nome" onblur="valida_nome(this)" onkeyup="maiuscula(this)"
+                        title="Informar o nome completo."><br>
+                    <input id="cpf" type="text" placeholder="CPF" maxlength="14" onkeydown="fMasc( this, mCPF )"
+                        onblur="valida_cpf(this)" title="Informar o CPF."><br>
+                    <input type="text" class="form-control" placeholder="Telefone" id="telefone" name="telefone"
+                        onblur="valida_telefone(this)" title="Informar o Telefone."><br>
+                    <input id="data_nascimento" type="date" placeholder="Data de nascimento" onblur="valida_idade(this)"
+                        title="Informar a Data de nascimento."><br>
+                    <input class="ui-widget" id="profissao" type="text" placeholder="Profissão"
+                        onblur="valida_profissao(this)" title="Informar a Profissão.">
+
+                    <select name="etnia" id="etnia" onblur="valida_etnia(this)" title="Informar a Etnia.">
+                        <option value="">Selecione a Etnia</option>
+                        <option value="Branca">Branco</option>
+                        <option value="Pardo">Pardo</option>
+                        <option value="Preto">Preto</option>
+                        <option value="Indigena">Indígena</option>
+                        <option value="Amarelo">Amarelo</option>
+                        <option value="não informada">Não sabida / Não informada</option>
+                    </select>
+                    <input id="email" type="text" placeholder="E-mail" onblur="valida_email(this)"
+                        title="Informar o E-mail."><br>
+                    <div>
+                        <div>
+                            <select name="sexo" id="sexo" onblur="valida_sexo(this)">
+                                <option value="">Selecione o sexo</option>
+                                <option value="Masculino">Masculino</option>
+                                <option value="Feminino">Feminino</option>
+                                <option value="Homem Trans">Homem Trans</option>
+                                <option value="Não Binário">Não Binário</option>
+                            </select>
+                        </div>
+                        <div id="form_gestante" style="display: inline-flex; margin-left: 5px;">
+                            <fieldset>
+                                <legend>Gestante</legend>
+                                <label for="nao">Não</label>
+                                <input type="radio" name="gestante" id="nao" value="nao" checked>
+                                <label for="sim">Sim</label>
+                                <input type="radio" name="gestante" id="sim" value="sim">
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <div>
+                        <br>
+                        <h3>
+                            Dados Médicos
+                        </h3>
+
+                    </div>
+                    <div>
+                        <br>
+                        <input id="cartao_sus" type="text" placeholder="Nº Cartão SUS" onblur="valida_cartao_sus(this)"
+                            title="Informar o número do cartão do SUS."><br>
+                        <input id="peso" type="text" placeholder="Peso" onblur="valida_peso(this)"
+                            title="Informar o Peso em quilogramas."><br>
+                        <input id="altura" type="text" placeholder="Altura" onblur="valida_altura(this)"
+                            title="Informar a Altura em metros."><br>
+                        <div class="widget" id="form_comorbidades" style="display: inline-flex; margin-left: 5px;">
+                            <fieldset>
+                                <legend>Comorbidades || Alergias</legend>
+                                <label for="nao">Não</label>
+                                <input type="radio" name="comorb_alerg" id="nao" value="nao" checked>
+                                <label for="sim">Sim</label>
+                                <input type="radio" name="comorb_alerg" id="sim" value="sim">
+                            </fieldset>
+
+                            <br>
+                        </div>
+                        <div id="comorbidade_alergia">
+                            <div id="comorbidade">
+                                <div>
+                                    <h4>
+                                        Comorbidades
+                                    </h4>
+                                </div>
+                                <div style="display: flex; justify-content: space-between;">
+
+                                    <div>
+                                        <input type="checkbox" id="hipertensao" name="comorbidades">
+                                        <label for="hipertensao">Hipertensão</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="diabetes" name="comorbidades">
+                                        <label for="diabetes">Diabetes</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="intolerancia" name="comorbidades">
+                                        <label for="intolerancia">Intolerâncias</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="cardiopatia" name="comorbidades">
+                                        <label for="Cardiopatia">Cardiopatia</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="imunossuprimido" name="comorbidades">
+                                        <label for="imunossuprimido">Imunossuprimido</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="alergia">
+                                <h4>
+                                    Alergias
+                                </h4>
+                                <div style="display: flex; justify-content: space-between;">
+                                    <div>
+                                        <input type="checkbox" id="medicamentos" name="alergias">
+                                        <label for="medicamentos">Medicamentos</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="mariscos" name="alergias">
+                                        <label for="mariscos">Mariscos</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="ovo" name="alergias">
+                                        <label for="ovo">Ovo</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="gluten" name="alergias">
+                                        <label for="gluten">Gluten</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="outros" name="alergias">
+                                        <label for="outros">Outros</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /////////////////////////////////////////// VACINAS ////////////////////////////////////////////////////////////////////// -->
+                    <div id="vacinas">
+                        <div>
+                            <h4>
+                                Vacinas
+                            </h4>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <div>
+                                    <input type="checkbox" id="Tríplice bacteriana" name="vacinas">
+                                    <label for="Tríplice bacteriana">Tríplice bacteriana</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="Hepatite B" name="vacinas">
+                                    <label for="Hepatite B">Hepatite B</label>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" id="Pneumonia" name="vacinas">
+                                    <label for="Pneumonia">Pneumonia</label>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <input type="checkbox" id="Febre Amarela" name="vacinas">
+                                    <label for="Febre Amarela">Febre amarela</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="Gripe" name="vacinas">
+                                    <label for="Gripe">Gripe</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="HPV" name="vacinas">
+                                    <label for="HPV">HPV</label>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <input type="checkbox" id="Herpes-zóster" name="vacinas">
+                                    <label for="Herpes-zóster">Herpes-zóster</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="Tríplice viral" name="vacinas">
+                                    <label for="Tríplice viral">Tríplice viral</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="Dengue" name="vacinas">
+                                    <label for="Dengue">Dengue</label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- ////////////// BOTÃO ///////////////////////////////////////////////////////////////////////////////////// -->
+                    <div id="div_button">
+                        <button type="button" onclick="enviar_dados()">Enviar</button><br>
+                    </div>
+                    <div id="dialog" title="Dados Inválidos!" style="display: none;">
+                        <p>
+                            Por favor, verifique os campos em vermelho e tente novamente.
+                        </p>
+                    </div>
+                </form>
+            </section>
+        </section>
+
+    </main>
+
+    
+  <footer>
+    <section id="footer_menu">
+      <a href="#" id="dynamicTop" style="display: none;">
+        <span id="dynamicTopHover" style="opacity: 0;"></span>
+        "Ir para o topo"
+      </a>
+      <div>
+        <li id="logo_li"><img src="./images/LOGO.png" alt="">
+      </div>
+      <div>
+        <ul>
+          <li>Mapa do site</li>
+          <li>Contato</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>Fale conosco</li>
+          <li>Politica de privacidade</li>
+        </ul>
+      </div>
+      <div>
+        <a href=”home.html” target=”blank”><img src="./img/anticovid.png" id="social-3" alt=”Nosso perfil no
+            Facebook”></a>
+      </div>
+
+    </section>
+
+    <section id="copyright">
+      <p>Desenvolvedor Fullstack | &copy HealthCare .LTDA | todos os
+        direitos reservados </p>
+    </section>
+  </footer>
+
+
+    <script>
+         $("a").fadeIn(3000)//efeito no menu, aplicado display none na unidade respectiva
+    </script>
+</body>
+
+</html>

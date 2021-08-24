@@ -1,0 +1,86 @@
+  * {
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0;
+    border: 0;
+    padding: 0;
+  }
+
+  :root {
+    --screenSize: "extra small";
+    --containerSize: auto; 
+    --gutter: 15px;
+  }
+  
+  /* // Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) { 
+    :root {
+        --screenSize: "small";
+        --containerSize: 550px; 
+    }
+  }
+  
+  /* // Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) { 
+    :root {
+        --screenSize: "medium";
+        --containerSize: 750px; 
+    }
+  }
+
+  .container {
+    width: var(--containerSize);
+    display: block;
+    margin: 0 auto;
+  }
+
+  .container-fluid {
+   
+    width: 100%;
+    display: block;
+  }
+
+  .col {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .col-12 {
+    width: 100%;
+  }
+
+  .col-8 {
+    width: 66.6%;
+  }
+
+  .col-6 {
+    width: 50%;
+  }
+
+  .col-4 {
+    width: 33.3%;
+  }
+
+  .col-3 {
+    width: 25%;
+  }
+
+  .col-2 {
+    width: 16.6%;
+  }
+
+  .col-1 {
+    width: 8.33333%;
+  }
+
+
+  .item {
+    background: #ddd;
+    padding: 23px;
+    margin-bottom: 12px;
+  }
+
+  span:before {
+    content: var(--screenSize);
+  }

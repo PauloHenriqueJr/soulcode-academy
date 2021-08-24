@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=10">
+    <title>Leitos</title>
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/leitos.css">
+    <script src="./assets/js/fontsize.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/leitos.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul id="header">
+                <ul>
+                    <li class="logo_li"><img  onclick="window.location='home.html';" src="./images/LOGO.png" alt="">
+
+                    </li>
+                    <li class="fix_img_text">SAÚDE</li>
+                </ul>
+                <ul id="accessibility">
+                    <li id="decrease-font">A-</li>
+                    <li id="increase-font">A+</li>
+                </ul>
+            </ul>
+        </nav>
+    </header>
+    <nav>
+        <ul id="horizontal_menu">
+            <li><a href="aboutUs.html">QUEM SOMOS</a></li>
+            <li><a href="cadastro.html">FORMULARIO</a></li>
+            <li><a href="leito.html">LEITOS</a></li>
+            <li><a href="galeria.html">GALERIA</a></li>
+        </ul>
+        
+    </nav>
+
+    <main>
+        <h1>Sistema de Leitos e Setores de Fechamento ao Covid-19</h1>
+        <section>
+            <h2>Ocupação de Leitos</h2>
+            <table id="tabela">
+                <thead>
+
+                    <tr>
+                        <td>Indicador</td>
+                        <td>Fase 1 - Alerta máximo</td>
+                        <td>Fase 2 - Controle</td>
+                        <td>Fase 3 - Flexibilização</td>
+                        <td>Fase 4 - Abertura Parcial</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Taxa de ocupção de leitos UTI</td>
+                        <td class="alert_red">Acima de 80% de ocupação</td>
+                        <td class="alert_orange">Entre 80% e 70% de Ocupação</td>
+                        <td class="alert_yellow">Entre 70% e 60% de Ocupação</td>
+                        <td class="alert_green">Abaixo de 60%</td>
+                    </tr>
+                    <tr class="gray">
+                        <td>Novas internações nos ultimos 7 dias</td>
+                        <td class="alert_red">Acima de 1,5</td>
+                        <td class="alert_orange">Entre 1,0 e 1,5</td>
+                        <td class="alert_yellow">Entre 0,5 e 1,0</td>
+                        <td class="alert_green">Abaixo de 0,5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h1>Abertura dos setores da economia de acordo com as fases.</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Fase 1 </td>
+                        <td>Fase 2 </td>
+                        <td>Fase 3 </td>
+                        <td>Fase 4 </td>
+                        <td>Fase 5 </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="alert_red">Fechado</td>
+                        <td class="alert_orange">Atividades Imobiliárias.</td>
+                        <td class="alert_yellow"> Atividades Imobiliárias.</td>
+                        <td class="alert_green">Academia.</td>
+                        <td class="alert_blue">Aberto</td>
+                    </tr>
+
+                    <tr class="gray">
+                        <td class="alert_red">Fechado</td>
+                        <td class="alert_orange">Comércio. </td>
+                        <td class="alert_yellow">Bares, Restaurantes, Similares.</td>
+                        <td class="alert_green">Bares, Restaurantes, Similares.</td>
+                        <td class="alert_blue">Aberto</td>
+                    </tr>
+
+                    <tr>
+                        <td class="alert_red">Fechado</td>
+                        <td class="alert_orange">Concessionária. </td>
+                        <td class="alert_yellow">Comércio.</td>
+                        <td class="alert_green">Comércio.</td>
+                        <td class="alert_blue">Aberto</td>
+                    </tr>
+
+                    <tr class="gray">
+                        <td class="alert_red">Fechado</td>
+                        <td class="alert_orange">Escritório. </td>
+                        <td class="alert_yellow">Salões de Beleza.</td>
+                        <td class="alert_green">Shopping Center.</td>
+                        <td class="alert_blue">Aberto</td>
+                    </tr>
+
+                    <tr>
+                        <td class="alert_red">Fechado</td>
+                        <td class="alert_orange">Shopping Center. </td>
+                        <td class="alert_yellow">Shopping Center.</td>
+                        <td class="alert_green"></td>
+                        <td class="alert_blue">Aberto</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+        
+
+<!-- ---------------QUANDO SELECIONA O INPUT, FICA COM BORDA QUADRADA--------------- -->
+        <section id="inputs">
+
+            <label for="leitos_uti">Leitos na UTI:</label>
+            <label for="leitos_enfermaria:">Novas internações:</label>
+            <input type="text" placeholder=" Digite a Porcentagem de Leitos" name="leitos_uti"
+                id="total_uti" class="input_leitos">
+            <input type="text" placeholder=" Digite a quantidade de internações"
+                name="leitos_enfermaria" id="total_enf" class="input_leitos">
+
+        </section>
+
+        <section>
+
+            <iframe
+                src="https://ourworldindata.org/explorers/coronavirus-data-explorer?zoomToSelection=true&facet=none&pickerSort=asc&pickerMetric=location&hideControls=true&Metric=People+vaccinated+%28by+dose%29&Interval=7-day+rolling+average&Relative+to+Population=true&Align+outbreaks=false&country=OWID_WRL~BRA"
+                loading="lazy">
+            </iframe>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <section id="footer_menu">
+          <a href="#" id="dynamicTop" style="display: none;">
+            <span id="dynamicTopHover" style="opacity: 0;"></span>
+            "Ir para o topo"
+          </a>
+          <div>
+            <li id="logo_li"><img src="./images/LOGO.png" alt="">
+          </div>
+          <div>
+            <ul>
+              <li>Mapa do site</li>
+              <li>Contato</li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li>Fale conosco</li>
+              <li>Politica de privacidade</li>
+            </ul>
+          </div>
+          <div>
+            <a href=”home.html” target=”blank”><img src="./img/anticovid.png" id="social-3" alt=”Nosso perfil no
+                Facebook”></a>
+          </div>
+    
+        </section>
+    
+        <section id="copyright">
+          <p>Desenvolvedor Fullstack | &copy HealthCare .LTDA | todos os
+            direitos reservados </p>
+        </section>
+      </footer>
+
+      <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script id="libras" src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+      <script src="./assets/js/home.js"></script>
+</body>
+
+</html>

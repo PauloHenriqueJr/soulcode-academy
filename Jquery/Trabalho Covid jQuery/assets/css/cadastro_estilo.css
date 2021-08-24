@@ -1,0 +1,80 @@
+.cadastro{   
+    display: flex;
+    justify-content: center;
+    width: 100%;  
+    padding-top: 40px ;
+
+}
+.cadastro #progressbar {
+    width: 100%;
+}
+
+.cadastro #topo_cadastro{
+    position: sticky;
+    background-color: white;
+    top: 0;
+    width: 100%;
+
+}
+
+.cadastro #center{
+    width: 50%;        
+}
+
+.cadastro input[type=text],[type=date] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+
+.cadastro select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+
+.cadastro button {
+    background-color: rgba(50 195 249);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+.cadastro #div_button {
+    margin-top: 2vh;
+}
+.cadastro #vacinas, #comorbidade, #alergia {
+    width: 100%;
+    margin-bottom: 1vh;
+    padding: 12px;
+    border: 1px solid rgb(184, 195, 158);
+    border-radius: 4px;
+    resize: none;
+}
+
+@media (max-width:860px){
+    .cadastro #center{
+        width: 60%;       
+    } 
+    
+}
+
+@media (max-width:700px){  
+    .cadastro #center{
+        width: 70%;       
+    }    
+}
+
+@media (max-width:650px){  
+    .cadastro #center{
+        width: 80%;       
+    } 
+      
+}

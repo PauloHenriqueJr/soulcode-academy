@@ -1,0 +1,144 @@
+*{
+    list-style: none;
+}
+
+#infocenter{
+    text-align: center;
+    margin-top: 6vw;
+    margin-bottom: 2vw;
+}
+/*tabs below*/
+
+#tabs{
+    border: solid 1px rgb(214, 214, 214); 
+}
+
+#tabs li{
+    border: none;
+    background-color: rgb(59, 182, 149);
+}
+
+#tabs ul{
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
+#tabs p{
+    text-align: justify;
+}
+
+/*accordion below*/
+
+#accordion{
+    border: solid 1px rgb(214, 214, 214); 
+    
+}
+
+#accordion h3{
+    border: none;
+    background-color: rgb(59, 182, 149);
+}   
+#accordion-1{
+    background-color: rgb(255, 255, 255);
+}
+#accordion p{
+    text-align: justify;
+}
+
+/*slide below*/
+
+#slideshow {
+    display: none;
+    margin: 0 auto;
+    position: relative;
+    width: 60%;
+    padding: 200px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+#slideshow div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+
+#slideshow div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.thumbnail img {
+    margin-top: 30px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+    height: 95px;
+}
+
+.thumbnail img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+/* photos protocol combat below */
+
+
+.protocolo_combate {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #combate {
+    text-align: center;
+  }
+
+  figure img {
+    width: 80%; 
+    margin-left: 10%;
+  }
+
+  figure figcaption {
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+/* Img footer below */
+
+  #social-3{
+      margin-top: 2vw;
+      width: 10vw;
+  }
+
+  #logo_li img{
+      width: 10vw;
+      align-items: center;
+  }
+
+
+
+#footer_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4vw;
+}
+
+footer {
+    background-color: rgb(59, 182, 149);
+    color: azure    ;
+    gap: 0;
+}
+
+#copyright {
+    text-align: center;
+    color: white;
+    background-color: rgb(59, 182, 149);
+}

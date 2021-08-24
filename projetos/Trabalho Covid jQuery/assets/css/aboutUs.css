@@ -1,0 +1,29 @@
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vw;
+}
+
+.info figure {
+    flex-grow: 1;
+}
+
+.info img {
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.info section {
+    flex-grow: 3;
+}
+p{
+    text-align: justify;
+}
+div.ex3 {
+    height: 110px;
+    overflow: auto;
+  }
+  

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles_1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Eventos, animações e efeitos</title>
+</head>
+<body>
+   <header>
+        <section>
+            <div id="box1"></div>
+            <div id="box2"></div>
+            <div id="box3"></div>
+            <div id="box4"></div>
+            <div id="box5"></div>
+        </section>
+    </br> </br> 
+    </header>  
+        <main>
+        <form action="" method="POST">
+            <section>
+                <div>
+                    <input class="item1" type="text" name="name" id="name" onblur="validaNome(this)"
+                        placeholder="Nome completo">
+                </div>
+                <div class="aumentar1">
+                    <input class="item1" type="text" id="cpf" onblur="validaCPF(this)" placeholder="123.456.789-00">
+                </div>
+            </section>
+            <section>
+                <div class="aumentar2">
+                    <input class="item1" type="text" id="adress" placeholder="Endereço">
+                    <!--maxleng limita campo de dia para 2 digitos-->
+                </div>
+                <div class="aumentar2">
+                    <select class="item1" style="background-color: rgb(255, 255, 255);" id="month"">
+                        <option value="" disabled selected hidden>Estado</option>
+                <option value="">ES</option>
+                <option value="">PR</option>
+                <option value="">RJ</option>
+                <option value="">MG</option>
+                <option value="">SP</option>
+                <option value="">SC</option>
+                <option value="">RS</option>
+                <option value="">BA</option>
+                <option value="">PE</option>
+                <option value="">MA</option>
+                    </select>
+                </div>
+                
+            </section>
+            <section>
+                <div>
+                    <input class="item1" type="email" id="email" placeholder="E-mail">
+                </div>
+                <div class="aumentar3">
+                    <input class="item1" type="tel" id="tel"  placeholder="Telefone">
+                </div>
+
+            </section>
+        <section>
+            <div class="aumentar4">
+                <!--Botão enviar -->
+                <button class="item2" type="button" id="enviar">Enviar</button>
+            </div>
+        </section>
+        <section>
+            <!--Botões das divs do formulario-->
+            <div class="aumentar2">
+                <button class="item1" type="button" id="btn1">CORES SORTIDAS</button>
+                </div>
+            <div class="aumentar2">
+                <button class="item1" type="button" id="btn2">TAMANHO E COR FIXA</button>
+                </div>
+            <div class="aumentar2">
+            <button class="item1" type="button" id="btn3">OCULTAR</button>
+            </div>
+            
+        </section>
+        <br><br>
+        <span></span>
+        <br>
+    </main>
+    <script src="scripts_1.js"></script>
+</body>
+</html>

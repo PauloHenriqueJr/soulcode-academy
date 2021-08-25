@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+    <meta name="Author" content="Paulo Henrique Jr">
+
+    <title>Grid layout responsive</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            grid-template-rows: 20vh 70vh 10vh;
+            grid-template-areas:
+                "header header"
+                " main  aside "
+                "footer footer";
+        }
+
+        header {
+            grid-area: header;
+            background-color: green;
+        }
+
+        main {
+            grid-area: main;
+            background-color: blue;
+        }
+
+        aside {
+            grid-area: aside;
+            background-color: violet;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: blueviolet;
+        }
+
+    /*media screen*/
+
+    
+
+       @media (min-width: 500px) {
+            body {
+                display: grid;
+                grid-template-columns: 3fr 1fr;
+                grid-template-rows: 20vh 50vh 10vh;
+                grid-template-areas:
+                "header header"
+                " main  main "
+                " aside aside"
+                "footer footer";
+            }
+        }
+    
+        @media (min-width: 700px) {
+            body {
+                display: grid;
+                grid-template-columns: 3fr 1fr;
+                grid-template-rows: 30vh 70vh 10vh;
+                grid-template-areas:
+                "header header"
+                " main  aside "
+                " main  aside "
+                "footer footer";
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <header></header>
+    <main></main>
+    <aside></aside>
+    <footer></footer>
+</body>
+
+</html>

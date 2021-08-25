@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0;
+    border: 0;
+    padding: 0;
+  }
+
+.item {
+    background-color: #dbf1f7;
+    height: 75px;
+    text-align: center;
+    border: rgb(255, 255, 255) solid 7px;
+}

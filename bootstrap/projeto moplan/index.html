@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+  <meta name="Author" content="Paulo Henrique Jr">
+  <link rel="stylesheet" href="./assets/css/carousel.css">
+  <link rel="stylesheet" href="./assets/css/index.css">
+  <link rel="stylesheet" href="./assets/css/global.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css">
+
+  <title>Moplan Moveis Planejados</title>
+
+  <!-- CDN CSS Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+   <!-- CDN jQuery -->
+   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.slim.js"></script>
+
+</head>
+
+<body id="top">
+  <header>
+    <div class="container-fluid mr-2" ></div>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./img/logoup.png" class="img-fluid" width=80vw alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="background-image: url('https://mdbcdn.b-cdn.net/img/svg/hamburger2.svg?color=056367');">
+            </span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-lg-end"  id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">
+                <i class="fa fa-home" aria-hidden="true"></i>INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./services.html">
+                <i class="fa fa-handshake" aria-hidden="true"></i>SERVIÇOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./aboutUs.html">
+                <i class="fas fa-users" aria-hidden="true"></i>SOBRE NÓS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./contact.html">
+                <i class="fa fa-envelope" aria-hidden="true"></i>CONTATO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <i class="fa fa-search" aria-hidden="true"></i>PESQUISAR</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+  </header>
+  <main>
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active " data-bs-interval="4000">
+          <img src="./img/kitchen.jpg" alt="cozinha">
+
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1 class="featurette-background">COZINHA PLANEJADA: UM AMBIENTE AGRADAVEL E FUNCIONAL.</h1>
+              <p><a class="btn btn-lg btn-dark" href="#">Saiba Mais</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="./img/homeoffice.jpg" alt="homeoffice">
+
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1 class="featurette-background">HOME OFFICE: ADEUS BAGUNÇA, OLÁ PRODUTIVIDADE</h1>
+              <p><a class="btn btn-lg btn-dark" href="#">Saiba Mais</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item"data-bs-interval="4000">
+          <img src="./img/bedroom.jpg"  alt="dormitorios">
+
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1 class="featurette-background">DORMITÓRIOS PLANEJADOS: AMBIENTE PESSOAL E ÚNICO.</h1>
+              <p><a class="btn btn-lg btn-dark" href="#">Saiba Mais</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="./img/closet.jpg" class="d-block w-100" alt="...">
+
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1 class="featurette-background">CLOSET PLANEJADO: ORGANIZAÇÃO, PRATICIDADE E COMODIDADE.</h1>
+              <p><a class="btn btn-lg btn-dark" href="#">Saiba Mais</a></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Antes</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Depois</span>
+      </button>
+    </div>
+
+    <div class="container marketing">
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">15 anos de vida,<span class="text-muted">
+            milhares de sonhos realizados!</span>
+          </h2>
+          <p class="lead">A MOPLAN é muito mais do que uma empresa de móveis planejados. Aqui, realizamos sonhos através de uma equipe formada por mais de 70 profissionais, dedicados a levar para sua casa ou empresa, o melhor produto e o melhor serviço.</p>
+
+         <p class="lead">Na MOPLAN, você encontra, uma linha completa de móveis planejados para qualquer ambiente, cozinha, dormitorios, closet, seu ambiente de trabalho e muito mais.</p>
+        </div>
+        <div class="col-md-5">
+          <img width="450" height="450"  src="./img/company.jpg">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">Moveis planejados.<span class="text-muted"> Vale a pena?</span></h2>
+          <p class="lead">Sim, é possível fazer um projeto para móveis que contemple desde os quartos de casal, de solteiro e de crianças, até salas, cozinhas e banheiros.</p>
+            
+            <p class="lead">Um dos pontos mais interessantes de planejar os móveis de casa é que eles proporcionam mais harmonia ao ambiente, tornando-o prático e estiloso, juntamente com os demais elementos da decoração. Aliás, planejar móveis é uma maneira de não errar na hora de montar a casa.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <div class="col-md-5">
+            <div class="img-holder">
+            <img width="450" height="480" src="./img/why.jpeg">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Deseja nosso serviço.<span class="text-muted">
+            Mas não sabe como funciona.</span></h2>
+          <p class="lead">É tudo bem simples, disponibilizamos diversos projetistas que vão a sua residência em qualquer horário marcado, entendendo sua ideia e adaptando ela ao espaço de sua residência, empresa entre outros.</p>
+            
+            <p class="lead">Com profissionais sérios e qualificados o seu projeto de móvel planejado pode ser uma experiência única criando uma identidade visual para seu lar doce lar sem causar nenhum tipo de transtorno ou dor de cabeça.</p>
+        </div>
+        <div class="col-md-5">
+          <div class="col-md-5">
+            <img width="490" height="500"  src="./img/services.jpg" >
+          </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+    </div>
+
+    <section class="working-area">
+
+      <!-- /START BUY -->
+
+    <!--Start working area-->
+  <div class="container">
+      <div class="section-title text-center">
+          <h2>SEU SONHO, NOSSO SONHO</h2>
+          <p class="lead">Mais de 70 profissionais dedicam-se diariamente para oferecer o melhor atendimento, o melhor produto e o melhor serviço, afinal de contas, você merece!</p>
+      </div>  
+      <div class="row">
+        
+          <!--Start single working item-->
+          <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="single-working-item">
+                 <div class="icon-box">
+                      <div class="icon">
+                          <div class="flaticon-people">
+                            <img src="./img/worker.png" alt="">
+                          </div>
+                      </div>
+                      <div class="count">
+                          <h3>1</h3>
+                      </div>    
+                 </div>
+                 <div class="text-box text-center">
+                     <h3>Consultores</h3>
+                     <p class="lead">Nossos consultores estão a sua disposição para tirar qualquer dúvida e indicar o melhor produto, dentro de suas possibilidades e necessidades.</p>
+                 </div>     
+              </div>
+          </div>
+          <!--End single working item-->
+
+          <!--Start single working item-->
+          <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="single-working-item">
+                 <div class="icon-box">
+                      <div class="icon">
+                          <div class="flaticon-people">
+                            <img src="./img/worker.png" alt="">
+                          </div>
+                      </div>
+                      <div class="count">
+                          <h3>2</h3>
+                      </div>    
+                 </div>
+                 <div class="text-box text-center">
+                     <h3>Projetistas</h3>
+                     <p class="lead">Nossa equipe de projetistas é formada por mais de 20 profissionais, que irão transformar o seu sonho em realidade, tudo ficará muito lindo!</p>
+                 </div>     
+              </div>
+          </div>
+          <!--End single working item-->
+
+          <!--Start single working item-->
+          <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="single-working-item">
+                 <div class="icon-box">
+                      <div class="icon">
+                          <div class="flaticon-people">
+                            <img src="./img/worker.png" alt="">
+                          </div>
+                      </div>
+                      <div class="count">
+                          <h3>3</h3>
+                      </div>    
+                 </div>
+                 <div class="text-box text-center">
+                     <h3>Instalação</h3>
+                     <p class="lead">Uma equipe especializada fará a montagem e regulagem dos seus móveis planejados, afinal, a beleza está nos detalhes.</p>
+                 </div>     
+              </div>
+          </div>
+          <!--End single working item-->
+
+          <!--Start single working item-->
+          <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="single-working-item">
+                 <div class="icon-box">
+                      <div class="icon">
+                          <div class="flaticon-people">
+                            <img src="./img/worker.png" alt="">
+                          </div>
+                      </div>
+                      <div class="count">
+                          <h3>4</h3>
+                      </div>    
+                 </div>
+                 <div class="text-box text-center">
+                     <h3>Pós-Venda</h3>
+                     <p class="lead">Nossa equipe de pós-venda irá entrar em contato para finalizar o serviço e tirar qualquer dúvida que você tenha e sempre que você precisar</p>
+                 </div>     
+              </div>
+          </div>
+          <!--End single working item-->
+      </div>
+  </div>
+<!--End working area-->
+
+    <hr class="featurette-divider">
+
+    <!-- /END BUY -->
+
+  </section>
+
+  <!--Start whatsapp button-->
+
+ <a href="whatsapp://send?phone=0000000000&text=Olá Moplan, gostaria de fazer um orçamento!" target="_blank"><svg viewBox="0 0 32 32" class="whatsapp-ico"><path d=" M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.478-1.318.13-.33.244-.73.244-1.088 0-.058 0-.144-.03-.215-.1-.172-2.434-1.39-2.678-1.39zm-2.908 7.593c-1.747 0-3.48-.53-4.942-1.49L7.793 24.41l1.132-3.337a8.955 8.955 0 0 1-1.72-5.272c0-4.955 4.04-8.995 8.997-8.995S25.2 10.845 25.2 15.8c0 4.958-4.04 8.998-8.998 8.998zm0-19.798c-5.96 0-10.8 4.842-10.8 10.8 0 1.964.53 3.898 1.546 5.574L5 27.176l5.974-1.92a10.807 10.807 0 0 0 16.03-9.455c0-5.958-4.842-10.8-10.802-10.8z" fill-rule="evenodd"></path></svg></a>
+
+ <!--End whatsapp button-->
+
+
+    <!-- FOOTER -->
+    <footer class="footer-content">
+      <img id="logofooter" src="./img/logodown.png">
+      <ul>
+          <li class="contact">
+            <br><br>
+              <a href=""><img src="./img/pin.png"> Av. SoulCode, Centro</a>
+              <hr style="height: 2px;"></br>
+              <a href=""><img src="./img/email.png"> contactmoplan@gmail.com</a>
+              <hr style="height: 2px;"></br>
+              <img src="./img/call.png"><a href=""> (41) 87654-6754 </a>  
+          </li>
+      </ul>
+      <ul class="socials">
+          <li><a href="https://www.facebook.com/"><img  src="./img/facebook.png" width="40%"></a></li>
+          <li><a href="https://www.instagram.com/"><img src="./img/instagram.png" width="40%"></a></li>
+          <li><a href="https://api.whatsapp.com/send?phone="><img src="./img/whatsapp.png" width="40%"></a></li>
+      </ul>
+
+    </footer>
+  </main>
+
+<!--Scroll to top-->
+<div class="scroll-to-top"><a href="#top"><img src="./img/scrollup.png" alt="Voltar ao topo"></a></div>
+
+  <!-- CDN JS Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+  <script src="./assets/js/scripts.js"></script>
+
+
+</body>
+
+</html>

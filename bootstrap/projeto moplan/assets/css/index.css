@@ -1,0 +1,132 @@
+ /*** 
+=============================================
+    Custom marketing index
+=============================================
+***/
+
+  .marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .marketing h2 {
+    font-weight: 400;
+  }
+
+  .marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+
+  /*** 
+=============================================
+    Working Area style index
+=============================================
+***/
+
+.working-area{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.working-area .sec-title {
+  padding: 0 165px 40px;
+}
+.working-area .sec-title p {
+  font-size: 18px;
+  line-height: 32px;
+  margin: 16px 0 0px;
+}
+.working-area .single-working-item {
+  padding-bottom: 2%;
+}
+
+ /*** 
+=============================================
+    Custom area icon-box index
+=============================================
+***/
+
+.working-area .single-working-item .icon-box {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #f7f7f7;
+  border-radius: 50%;
+  display: block;
+  height: 180px;
+  padding: 9px;
+  position: relative;
+  width: 180px;
+  margin: 0 auto;
+  transition: all 500ms ease;
+}
+
+.working-area .single-working-item .icon-box .icon {
+  background: #f7f7f7 none repeat scroll 0 0;
+  border-radius: 50%;
+  display: block;
+  height: 160px;
+  width: 160px;
+  text-align: center;
+  line-height: 160px;
+  color: #056367;
+  font-size: 50px;
+  transition: all 500ms ease;
+}
+
+.working-area .single-working-item .icon-box .count {
+  background: #ffffff none repeat scroll 0 0;
+  border: 1px solid #f7f7f7;
+  border-radius: 50%;
+  display: block;
+  height: 45px;
+  left: 5px;
+  position: absolute;
+  text-align: center;
+  top: 10px;
+  width: 45px;
+  transition: all 500ms ease;
+}
+.working-area .single-working-item .icon-box .count h3 {
+  color: #252525;
+  font-size: 18px;
+  line-height: 45px;
+  font-weight: 700;
+  transition: all 500ms ease;
+}
+.working-area .single-working-item .text-box h3 {
+  color: #252525;
+  font-size: 25px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin: 21px 0 9px;
+}
+
+.working-area .single-working-item:hover .icon-box{
+  background: #056367;
+} 
+.working-area .single-working-item:hover .icon-box .count{
+  background: #056367;
+}
+.working-area .single-working-item:hover .icon-box .count h3{
+  color: #fff;
+}
+
+.flaticon-people img{
+  width:35%;
+}
+
+ /*** 
+  =============================================
+      Custom button index
+  =============================================
+  ***/
+    
+  .btn-dark{
+    background-color: #056367 !important ;
+    box-shadow: 3px 3px 5px #000000 !important; 
+    border: 0 !important;
+    transition: all 500ms ease !important;
+  }
+
+  .btn-dark:hover{
+    background: #141414 !important;  
+    color: #fff !important;
+  }

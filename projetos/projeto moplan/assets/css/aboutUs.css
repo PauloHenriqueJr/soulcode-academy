@@ -1,0 +1,96 @@
+/*** 
+=============================================
+    About Interrio area style
+=============================================
+***/
+.about-interrio-area {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.about-interrio-area .text-holder h3 {
+  color: #252525;
+  font-size: 20px;
+  font-weight: 500;
+  margin: -5px 0 24px;
+  line-height: 32px;
+}
+
+.about-interrio-area .text-holder h3 span {
+  color: #056367;
+}
+
+.about-interrio-area .text-holder .signature-and-name {
+  margin: 30px 0 0;
+}
+
+.about-interrio-area .text-holder .signature-and-name .signature {
+  width: 180px;
+}
+
+.about-interrio-area .text-holder .signature-and-name .signature,
+.about-interrio-area .text-holder .signature-and-name .name {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.about-interrio-area .text-holder .signature-and-name .name {
+  padding-left: 30px;
+}
+
+.about-interrio-area .text-holder .signature-and-name .name h4 {
+  color: #252525;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0 0 3px;
+}
+
+.about-interrio-area .text-holder .signature-and-name .name p {
+  color: #056367;
+  font-weight: 400;
+  font-style: italic;
+  margin: 0;
+}
+
+.about-interrio-area .single-item .img-holder {
+  position: relative;
+  overflow: hidden;
+}
+
+.about-interrio-area .single-item .img-holder img {
+  transform: scale(1);
+  transition: all 0.5s ease 0s;
+  width: 100%;
+}
+
+.about-interrio-area .single-item .img-holder .overlay .box .content a i {
+  background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+  border-radius: 50%;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 16px;
+  height: 45px;
+  line-height: 46px;
+  transition: all 500ms ease 0s;
+  width: 45px;
+}
+
+.about-interrio-area .single-item:hover .img-holder img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.about-interrio-area .single-item .img-holder .overlay .box .content a:hover i {
+  background: #056367;
+}
+
+.about-interrio-area .single-item .text-box {
+  margin: 28px 0 0;
+}
+
+.about-interrio-area .single-item .text-box h3 {
+  color: #252525;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 0 14px;
+}

@@ -1,0 +1,306 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    text-justify: auto;
+}
+
+body {
+    padding-top: 3rem;
+    color: #5a5a5a;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*** 
+  =============================================
+      Custom navbar
+  =============================================
+  ***/
+
+.navbar-nav .nav-item .nav-link {
+    position: relative;
+    margin: 0 1rem;
+    color: #ffffff;
+}
+
+
+.nav-link::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    border-radius: 80%;
+    box-shadow: 1px 1px 3px #056367;
+    background-color: #056367;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .3s ease;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1.1);
+}
+
+.navbar-toggler {
+    width: 12%;
+    margin-right: 2%;
+    color: #056367 !important;
+    background-color: #056367 !important;
+    box-shadow: 3px 3px 5px black !important;
+
+}
+
+/*** 
+=============================================
+    Top orientation area style
+=============================================
+***/
+.top-orientation-area {
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.top-orientation-area .top-orientation-bottom {
+    background-color: rgba(5, 0, 0, 0.698);
+    box-shadow: 0px 8px 23px -6px black;
+    bottom: 0;
+    font-size: 36px;
+    font-weight: 400;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.top-orientation-area .top-orientation-bottom .left ul li {
+    color: #f9f9f9;
+    font-size: 25px;
+    font-weight: 400;
+    display: inline-block;
+}
+
+/*** 
+=============================================
+    Featurettes
+=============================================
+***/
+
+.featurette-divider {
+    margin: 5rem 0;
+}
+
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+}
+
+.featurette-background {
+    background-color: rgba(5, 0, 0, 0.698);
+    box-shadow: 0px 8px 23px -6px black;
+    font-weight: 400;
+
+}
+
+/*custom scrollbar below*/
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #056367;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #000000;
+}
+
+/*custom whatsapp button*/
+
+.whatsapp-ico {
+    fill: rgb(255, 255, 255);
+    width: 45px;
+    height: 45px;
+    padding: 3px;
+    background-color: #008b17;
+    color: white;
+    border-radius: 50%;
+    transition: all 500ms ease 0s;
+    box-shadow: 0px 8px 23px -6px black;
+    position: fixed;
+    bottom: 90px;
+    right: 10px;
+}
+
+.whatsapp-ico:hover {
+    border: 2px solid #056367;
+    color: #fff;
+    background: #056367;
+    box-shadow: 2px 2px 11px rgba(0, 0, 0, 0.7);
+}
+
+/*** 
+=============================================
+    Custom icons
+=============================================
+***/
+
+.fa-mouse-pointer {
+    margin: 5px;
+    color: #ffffff;
+}
+
+.fa-home,
+.fa-search,
+.fa-envelope,
+.fa-users,
+.fa-handshake {
+    margin: 5px;
+    color: #056367;
+}
+
+/*** 
+=============================================
+    Custom footer
+=============================================
+***/
+
+.footer-content {
+    background-color: #056367;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    text-align: center;
+}
+
+.footer-content ul li {
+    list-style: none;
+}
+
+#logofooter {
+    margin-left: 3%;
+    width: 21%;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials a {
+    color: white;
+}
+
+.socials img {
+    margin-top: 40%;
+}
+
+
+.contact img {
+    width: 10%;
+    height: 8%;
+    padding: 2%;
+
+}
+
+.contact a {
+    margin-top: 10%;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+
+.contact a:hover {
+    color: #ffffff;
+}
+
+/*** 
+  =============================================
+      Custom scrolltop
+  =============================================
+  ***/
+
+.scroll-to-top img {
+    background: #fcfcfc;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    bottom: 25px;
+    cursor: pointer;
+    height: 45px;
+    position: fixed;
+    padding: 3px;
+    right: 10px;
+    transition: all 500ms ease 0s;
+    width: 45px;
+    box-shadow: 0px 8px 23px -6px black;
+}
+
+.scroll-to-top img:hover {
+    border: 2px solid #000000;
+    color: #fff;
+    background: #000000;
+}
+
+/*** 
+=============================================
+    Responsive CSS
+=============================================
+***/
+
+@media (min-width: 40em) {
+    .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 62em) {
+    .featurette-heading {
+        margin-top: 7rem;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .navbar-expand-md>.container {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}

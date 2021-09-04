@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img src="./school_project.png" width="450px"></br>
+    <img src="./school_project.png"></br>
     Projeto Cadastro Escolar<br>
 </h1>
 

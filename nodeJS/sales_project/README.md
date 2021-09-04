@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img src="./sales_project.png" width="450px"></br>
+    <img src="./sales_project.png"></br>
     Projeto Cadastro De Produtos<br>
 </h1>
 

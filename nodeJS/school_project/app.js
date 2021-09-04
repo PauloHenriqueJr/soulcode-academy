@@ -4,7 +4,7 @@ const mongoose = require("mongoose") //chamando mongoose
 const porta = 3000;// criando variavel para porta
 
 // Conexão ao database mongodb
-const database = "mongodb+srv://paulo_henrique:paulo_henrique@cluster0.kypul.mongodb.net/school?retryWrites=true&w=majority"
+const database = "mongodb_here" //inserir seu acesso mongodb
 
 mongoose.connect(database, { useUnifiedTopology: true, useNewUrlParser: true  }, (err, client) => {
   if (err) return console.log(err);

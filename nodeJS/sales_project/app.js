@@ -7,7 +7,7 @@ const port = 3000 // criando variavel para porta
 
 // Conexão ao database mongodb
 
-const database = "mongodb+srv://paulo_henrique:paulo_henrique@cluster0.kypul.mongodb.net/vendas?retryWrites=true&w=majority"
+const database = "mongodb_here"
 
 
 mongoose.connect(database, { useUnifiedTopology: true, useNewUrlParser: true  }, (err, client) => {

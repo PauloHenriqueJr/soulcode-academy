@@ -1,7 +1,7 @@
 {
   "name": "project_school",
   "version": "1.0.0",
-  "description": "\"Projeto para prática do node.js\",",
+  "description": "school_project to SoulCode Academy",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",

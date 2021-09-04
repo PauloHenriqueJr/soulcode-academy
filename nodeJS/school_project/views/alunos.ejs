@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  
+
+  <!-- CDN Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"
+    defer></script>
+
+  <title>Cadastro de Aluno</title>
+</head>
+<body>
+    <header>
+        <div class="container-fluid" ></div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="/">
+              <img src="/images/logo.png" class="img-fluid" width=30vw alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+              aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon" style="background-image: url('https://mdbcdn.b-cdn.net/img/svg/hamburger2.svg?color=056367');">
+                </span>
+            </button>
+    
+            <div class="collapse navbar-collapse justify-content-lg-end"  id="navbarCollapse">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/">
+                    <i class="fa fa-home" aria-hidden="true"></i>INICIO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/alunos">
+                    <i class="fa fa-handshake" aria-hidden="true"></i>ALUNOS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./aboutUs.html">
+                    <i class="fas fa-users" aria-hidden="true"></i>PROFESSORES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./contact.html">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>TURMAS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">
+                    <i class="fa fa-search" aria-hidden="true"></i>PESQUISAR</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+      </header>
+  <main>
+    
+    <div class="container mt-5">
+      <div class="d-flex justify-content-between align-items-end">
+        <h1 class="my-3">Quadro de Alunos</h1> <a href="/alunos/novo" class="btn btn-success flex" >Cadastrar Novo</a>
+      </div>
+      <table class="table table-striped">
+        <thead>
+            <tr>
+            <td class="col">Nome</td>
+            <td class="col">Email</td>
+            <td class="col">CPF</td>
+            <td class="col">RG</td>
+            <td class="col">Endereço</td>
+            <td class="col">Telefone</td>
+            <td class="col">Matrícula</td>
+            <td class="col">Ações</td>
+          </tr>
+        </thead>
+        <tbody>
+          <% dados_aluno.forEach(function(dados) { %>
+            <tr>
+              <td>
+                <%= dados.nome %>
+              </td>
+              <td>
+                <%= dados.email %>
+              </td>
+              <td>
+                <%= dados.cpf %>
+              </td>
+              <td>
+                <%= dados.rg %>
+              </td>
+              <td>
+                <%= dados.endereco %>
+              </td>
+              <td>
+                <%= dados.telefone %>
+              </td>
+              <td>
+                <%= dados.matricula %>
+              </td>
+
+              <td>
+                <a class="btn btn-warning" style="width: 100%;" href="/alunos/editar/<%= dados._id %>"> Editar</a>
+                <a class="btn btn-danger" style="width: 100%;" href="/alunos/apagar/<%= dados._id %>"> Apagar</a>
+              </td>
+
+            </tr>
+            <% }) %>
+        </tbody>
+    </div>
+  </main>
+</body>
+
+</html>
+
+  

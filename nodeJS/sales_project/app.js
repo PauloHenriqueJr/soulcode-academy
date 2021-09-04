@@ -9,6 +9,7 @@ const port = 3000 // criando variavel para porta
 
 const database = "mongodb+srv://paulo_henrique:paulo_henrique@cluster0.kypul.mongodb.net/vendas?retryWrites=true&w=majority"
 
+
 mongoose.connect(database, { useUnifiedTopology: true, useNewUrlParser: true  }, (err, client) => {
     if (err) return console.log(err);
   

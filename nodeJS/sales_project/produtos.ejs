@@ -81,7 +81,8 @@
                             <%= produto.codigoBarras %>
                         </td>
                         <td>
-                            <a class="btn btn-danger flex"  href="/produtos/apagar/<%=produto._id %>">Apagar</a>
+                            <a class="btn btn-warning flex" style="width: 120px;" href="/editarProduto/<%=produto._id %>">Editar</a>
+                            <a class="btn btn-danger flex"  style="width: 120px;" href="/produtos/apagar/<%=produto._id %>">Apagar</a>
                         </td>
                     </tr>
                     <% }); %>

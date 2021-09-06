@@ -76,6 +76,35 @@ app.post("/cadastrarProdutos", (req, res) => {
 
 });
 
+//editar produto
+app.get("/editarProduto/:id", (req,res)=>{
+	Produtos.findById(req.params.id, (err, produto)=>{
+		if(err)
+			return res.status(500).send("Erro ao consultar produto");
+		res.render("editarProdutos",{dados_item:produto})
+	});
+});
+
+app.post("/editarProduto", (req,res)=>{
+	let id = req.body.id;
+	Produtos.findById(id,(err, produto)=>{
+		if(err)
+			return res.status(500).send("Erro ao consultar produto");
+            produto.nome = req.body.nome;
+            produto.v1Unit = req.body.valor;
+            produto.codigoBarras = req.body.codBarras;
+
+		produto.save(err =>{
+			if(err)
+				return res.status(500).send("Erro ao editar produto");
+			return res.redirect("/produtos");
+			
+		});
+	});
+});
+
+
+//apagar produto
 app.get("/produtos/apagar/:id", (req, res) => {
     var apagar_produto = req.params.id; 
     Produtos.findByIdAndDelete({ _id: apagar_produto }, (err, result) => { 

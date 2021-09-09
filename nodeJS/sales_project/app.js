@@ -21,7 +21,7 @@ mongoose.connect(database, { useUnifiedTopology: true, useNewUrlParser: true  },
 
 const Produtos = mongoose.model("produtos", {
     nome: String,
-    v1Unit: Number,
+    v1Unit: String,
     codigoBarras: String
 });
 
@@ -119,4 +119,16 @@ app.listen(port, () => {
     console.log("Servidor rodando na porta", +port);
 
 });
+
+
+app.get("/pesquisar",(req,res)=>{
+    var busca = req.query.pesquisa;
+    
+     console.log(busca);
+     Produtos.find({ $or: [ { nome:busca }, { v1Unit:busca }, { codigoBarras:busca} ] }, (err, produto)=>{
+		if(err)
+			return res.status(500).send("Erro ao consultar produto");
+		res.render("produtos",{lista_produtos:produto})
+	});
+})
 

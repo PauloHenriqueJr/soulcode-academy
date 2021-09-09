@@ -1,0 +1,64 @@
+<%- include('../partials/header'); %>
+
+  <main>
+    
+    <div class="container mt-5">
+      <% if (dados_aluno == 0){ %>
+        <div class="alert alert-warning text-danger text-center text-uppercase" role="alert">
+            Nenhum aluno cadastrado
+          </div>
+        <% } %>
+      <div class="d-flex justify-content-between align-items-end">
+        <h1 class="my-3">Quadro de Alunos</h1> <a href="/alunosCadastrar" class="btn btn-success flex" >Cadastrar Novo</a>
+      </div>
+      <table class="table table-striped">
+        <thead>
+            <tr>
+            <td class="col">Nome</td>
+            <td class="col">Email</td>
+            <td class="col">CPF</td>
+            <td class="col">RG</td>
+            <td class="col">Endereço</td>
+            <td class="col">Telefone</td>
+            <td class="col">Matrícula</td>
+            <td class="col">Ações</td>
+          </tr>
+        </thead>
+        <tbody>
+          <% dados_aluno.forEach(function(dados) { %>
+            <tr>
+              <td>
+                <%= dados.nome %>
+              </td>
+              <td>
+                <%= dados.email %>
+              </td>
+              <td>
+                <%= dados.cpf %>
+              </td>
+              <td>
+                <%= dados.rg %>
+              </td>
+              <td>
+                <%= dados.endereco %>
+              </td>
+              <td>
+                <%= dados.telefone %>
+              </td>
+              <td>
+                <%= dados.matricula %>
+              </td>
+
+              <td>
+                <a class="btn btn-warning" style="width: 100%;" href="/alunosEditar/<%= dados._id %>"> Editar</a>
+                <a class="btn btn-danger" style="width: 100%;" href="/alunosApagar/<%= dados._id %>"> Apagar</a>
+              </td>
+
+            </tr>
+            <% }) %>
+        </tbody>
+    </div>
+  </main>
+  
+  <%- include('../partials/footer'); %>
+  

@@ -59,6 +59,10 @@
             <div class="d-flex justify-content-between align-items-end">
                 <h1 class="my-3">Lista de Produtos</h1> <a href="/cadastrarProdutos"
                     class="btn btn-success mb-2 flex">Inserir Produto</a>
+                    <form action="/pesquisar" method="GET">
+                        <input type="search" name="pesquisa">
+                        <button type="submit">pesquisar</button>
+                    </form>
             </div>
             <table class="table table-hover">
                 <thead>

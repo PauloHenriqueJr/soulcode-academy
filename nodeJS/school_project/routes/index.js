@@ -1,10 +1,10 @@
 const express = require("express");//chamando express
 const router = express.Router();//chamando rotas do express
-const alunos = require("../controllers/alunosController.js"); //chamando controllers do aluno
+const alunos = require("../controllers/alunosController"); //chamando controllers do aluno
 
 // Página Inicial.
 router.get("/", (req, res) => {
-  res.render("index.ejs");
+  res.render("views/pages/index.ejs");
 });
 
 /////// Rotas do aluno ////////
@@ -13,14 +13,14 @@ router.get("/", (req, res) => {
 router.get("/alunos", alunos.listar);
 
 // Cadastro
-router.get("/alunos/novo", alunos.cadastrar);
-router.post("/alunos/novo", alunos.cadastrarPOST);
+router.get("/alunosCadastrar", alunos.cadastrarGet);
+router.post("/alunosCadastrar", alunos.cadastrarPOST);
 
 // Edição de cadastro
-router.get("/alunos/editar/:id", alunos.editar);
-router.post("/alunos/editar/:id", alunos.editarPOST);
+router.get("/alunosEditar/:id", alunos.editarGet);
+router.post("/alunosEditar/:id", alunos.editarPOST);
 
 // Apagar
-router.get("/alunos/apagar/:id", alunos.apagar);
+router.get("/alunosApagar/:id", alunos.apagar);
 
 module.exports = router;

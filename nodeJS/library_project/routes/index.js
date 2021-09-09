@@ -5,12 +5,15 @@ const livros = require("../controllers/livrosController.js"); //chamando control
 // Página Inicial.
 router.get("/", (req, res) => {
   res.render("index.ejs");
+  
 });
 
 /////// Rotas de livros ////////
 
 // Listagem
 router.get("/livros", livros.listar);
+
+router.get("/livros/pesquisar", livros.pesquisar);
 
 // Cadastro
 router.get("/livros/novo", livros.cadastrar);

@@ -20,6 +20,7 @@ app.use(express.json());
 
 // configurando a view ejs para carregamento
 app.set("view engine", "ejs");
+app.set("views", __dirname, "/views");
 
 // importando public
 var path = require('path');

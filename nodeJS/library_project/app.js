@@ -3,6 +3,7 @@ const app = express() //estanciando app
 const mongoose = require("mongoose") //chamando mongoose
 const porta = 3000;// criando variavel para porta
 
+
 // Conexão ao database mongodb
 const database = "mongodb here" //inserir seu acesso mongodb
 

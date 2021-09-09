@@ -1,0 +1,76 @@
+<%- include('../partials/header'); %>
+
+<main>
+<div class="container mt-4">
+    <% if (listar_produtos == 0){ %>
+        <div class="alert alert-warning text-danger text-center text-uppercase" role="alert">
+            Nenhum produto cadastrado
+          </div>
+        <% } %>
+    <div class="row">
+        <div class="col">
+          <div class="row mt-5">
+            <div class="col-6">  
+                <h1>Lista de Produtos</h1>
+            </div>  
+            <div class="col-6 text-right">
+                <a href="/cadastrarProdutos" class="btn btn-primary my-3 text-center">Inserir Produto</a>  
+            </div>
+
+          </div>
+
+            <table class="table table-sm table-hover">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Nome: </th>
+
+                        <th>Vl. Unit</th>
+
+                        <th>Código</th>
+
+                        <th>Ações</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <% listar_produtos.forEach(function(produto) { %>
+
+                    <tr>
+
+                        <td><%= produto.nome %></td>
+
+                        <td><%= produto.vlUnit %></td>
+
+                        <td><%= produto.codigoBarras %></td>
+
+                        <td>
+
+                            <a href="/editarProdutos/<%= produto._id %>" class="btn btn-sm btn-success">Editar</a>
+
+                            <a href="/deletarProdutos/<%= produto._id %>" class="btn btn-sm btn-danger">Excluir</a>
+
+                        </td>
+
+                    </tr>
+
+                    <% }) %>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>  
+
+  </div>
+</main>
+ 
+
+  <%- include('../partials/footer'); %>

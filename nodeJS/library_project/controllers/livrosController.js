@@ -1,6 +1,7 @@
 const mongoose = require("mongoose"); //chamando mongoose
 const Livro = require("../models/livro"); //chamando models
 
+
 // Lista de livro
 exports.listar = (req, res) => {
   Livro.find((err, resultado) => {
@@ -54,6 +55,15 @@ exports.apagar = async (req, res) => {
   }
 };
 
+exports.pesquisar = async (req,res)=>{
+  var busca = req.query.pesquisar;
+  
+   Livro.find({ $or: [ { titulo:busca }, { autor:busca }, { editora:busca}, { ano:busca} ] }, (err, produto)=>{
+  if(err)
+    return res.status(500).send("Erro ao consultar produto");
+  res.render("livros",{dados_livro:produto})
+});
+};
 
 //uso de função async e await é uma forma de trabalhar com funções assincronas em javascript
 //resumindo, para não perder tempo, falamos. Express espere o banco de dados retornar, espere aqui

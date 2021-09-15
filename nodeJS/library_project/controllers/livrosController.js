@@ -1,69 +1,122 @@
+const express = require("express");
 const mongoose = require("mongoose"); //chamando mongoose
 const Livro = require("../models/livro"); //chamando models
+const User = require("../models/user");//chamando models
 
 
-// Lista de livro
-exports.listar = (req, res) => {
-  Livro.find((err, resultado) => {
-    if (err) return console.log(err);
+//acess login
 
-    res.render("livros.ejs", { dados_livro: resultado });
+//register
+exports.register = (req,res)=>{
+    res.render("register");
+};
+
+
+exports.registerPost = (req, res)=>{
+  let user = new User();
+  user.username = req.body.username;
+  user.email = req.body.email;
+  user.password = req.body.password;
+
+ 
+  user.save((err, user)=>{
+      if(err){
+          return res.status(500).send("Erro no cadastro");
+      };
+      if(user.username == 'adm' || user.password == 'adm'){
+          return res.send('Nome de usuario ou senha INVALIDOS');
+      };
+      return res.redirect("/");
   });
 };
 
-// Cadastrar novo livro
-exports.cadastrar = (req, res) => {
-  res.render("livrosnovo.ejs");
-};
-//condições para cadastro e uso de async com await para aguardar consolidação de cadastro
-exports.cadastrarPOST = async (req, res) => {
-  try {
-    const livro = new Livro (req.body);
-    await livro.save();
-    res.redirect("/livros");
-  } catch (err) {
-    return res.status(400).send({err: "Falha no cadastro"});
-  }
+//livros para usuarios
+exports.livrosusuario = (req, res)=>{
+  Livro.find((err, resultado) => {
+      if(err)
+          return res.status(500).send("Erro ao consultar livro");
+      
+      return res.render("livrosusuario", {
+        dados_livro:resultado
+      })
+  })
 };
 
-// Editar dados do livro
-exports.editar = async (req, res) => {
-  try {
-  const resultado = await Livro.findById(req.params.id);
-  res.render("livroseditar.ejs", {dados: resultado});
-  } catch (err) {
-    res.send(err);
-  }
-};
+        // Lista de livro
+        exports.listar = (req, res) => {
+          Livro.find((err, resultado) => {
+            if (err) return console.log(err);
 
-exports.editarPOST = async (req, res) => {
-  try {
-    await Livro.findOneAndReplace({_id: req.params.id},{ ...req.body });
-    res.redirect("/livros");
-  } catch (err) {
-    return console.log(err);
-  }
-};
+            res.render("livros", {
+              dados_livro: resultado
+            });
+          });
+        };
 
-// Apagar dados do livro
-exports.apagar = async (req, res) => {
-  try {
-    await Livro.findByIdAndDelete(req.params.id);
-    res.redirect("/livros");
-  } catch (err) {
-    return console.log(err);
-  }
-};
+        // Cadastrar novo livro
+        exports.cadastrar = (req, res) => {
+          res.render("livrosnovo");
+        };
+        //condições para cadastro e uso de async com await para aguardar consolidação de cadastro
+        exports.cadastrarPOST = async (req, res) => {
+          try {
+            const livro = new Livro(req.body);
+            await livro.save();
+            res.redirect("/livros");
+          } catch (err) {
+            return res.status(400).send({
+              err: "Falha no cadastro"
+            });
+          }
+        };
 
-exports.pesquisar = async (req,res)=>{
-  var busca = req.query.pesquisar;
-  
-   Livro.find({ $or: [ { titulo:busca }, { autor:busca }, { editora:busca}, { ano:busca} ] }, (err, produto)=>{
-  if(err)
-    return res.status(500).send("Erro ao consultar produto");
-  res.render("livros",{dados_livro:produto})
-});
-};
+        // Editar dados do livro
+        exports.editar = async (req, res) => {
+          try {
+            const resultado = await Livro.findById(req.params.id);
+            res.render("livroseditar", {
+              dados: resultado
+            });
+          } catch (err) {
+            res.send(err);
+          }
+        };
 
-//uso de função async e await é uma forma de trabalhar com funções assincronas em javascript
-//resumindo, para não perder tempo, falamos. Express espere o banco de dados retornar, espere aqui
+        exports.editarPOST = async (req, res) => {
+          try {
+            await Livro.findOneAndReplace({
+              _id: req.params.id
+            }, {
+              ...req.body
+            });
+            res.redirect("/livros");
+          } catch (err) {
+            return console.log(err);
+          }
+        };
+
+        // Apagar dados do livro
+        exports.apagar = async (req, res) => {
+          try {
+            await Livro.findByIdAndDelete(req.params.id);
+            res.redirect("/livros");
+          } catch (err) {
+            return console.log(err);
+          }
+        };
+
+//pesquisar
+        exports.pesquisar = (req, res) => {
+          var resTitulo = req.query.procura;
+          var resAutor = req.query.procura;
+          var resEditora = req.query.procura;
+          var resAno = req.query.procura;
+          var resISBN = req.query.procura;
+      
+          Livro.find({$or:[{titulo: resTitulo}, {autor: resAutor}, {editora: resEditora}, {ano: resAno}, {isbn: resISBN}]}, (err, livro)=>{
+              if(err){
+                  return res.status(500).send("Erro ao consultar livro");
+              }
+              res.render("livrosusuario", {dados_livro:livro})
+          })
+      };

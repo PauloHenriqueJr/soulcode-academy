@@ -2,18 +2,30 @@ const express = require("express");//chamando express
 const router = express.Router();//chamando rotas do express
 const livros = require("../controllers/livrosController.js"); //chamando controllers do aluno
 
-// Página Inicial.
-router.get("/", (req, res) => {
-  res.render("index.ejs");
-  
+//login
+router.get("/", (req, res)=>{
+  res.render("login");
 });
 
+//resgister
+router.get("/register", livros.register);
+router.post("/register", livros.registerPost);
+
+
+// router.get("/", (req, res) => {
+//   res.render("index");
+// });
+
 /////// Rotas de livros ////////
+
+///livros para usuarios
+router.get("/livrosusuario", livros.livrosusuario)
 
 // Listagem
 router.get("/livros", livros.listar);
 
-router.get("/livros/pesquisar", livros.pesquisar);
+//pesquisar
+router.get("/livrospesquisar", livros.pesquisar);
 
 // Cadastro
 router.get("/livros/novo", livros.cadastrar);

@@ -1,50 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
 
     <!-- CDN CSS Bootstrap -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-  integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- CDN jQuery -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.slim.js"></script>
+
+    <title>Login</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid"></div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="/">
+                <img src="/images/logo.png" class="img-fluid" width=30vw alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"
+                    style="background-image: url('https://mdbcdn.b-cdn.net/img/svg/hamburger2.svg?color=056367');">
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-lg-end" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/register">
+                            <i class="fa fa-home" aria-hidden="true"></i>CADASTRE-SE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">
+                            <i class="fa fa-handshake" aria-hidden="true"></i>LOGIN</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="container py-4 px-3 d-md-flex flex-md-row">
+        <section class="row m-0 align-items-center w-100">
+            <section class="col">
+                <h1 class="text-center">Area de Login</h1>
+                <form class="form-container col-12 col-md-12">
+                    <div class="form-row">
+                        <div class="form-group text-center col-9">
+                            <div class="col-6 offset-5">
+                                <!--name-->
+                                <input type="text" name="username" id="username" class="form-control" placeholder="Insira o seu nome">
+                                <small class="form-text text-muted">Utilize seu nome de acesso</small>
+                            </div>
+                             
+                            <!--password-->
+                            <div class="col-6 offset-5">
+                                <input type="password" name="password" id="password" class="form-control"
+                                    placeholder="Digite sua senha">
+                                    <small class="form-text text-muted">Forneça uma senha valida</small>
+                            </div>
+
+                                <button type="submit"
+                                    class="btn btn-outline-primary mt-3 col-4 offset-4" onclick="validation()"><a id="pegar" href="livros">Login</button>
+                </form>
+                <button type="submit" name="register"
+                class="btn btn-outline-primary mt-3 col-4 offset-4"><a href="register">Cadastre-se</button>
+            </section>
+        </section>
+    </section>
+<!-- CDN CSS Bootstrap -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
 <!-- CDN jQuery -->
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.slim.js"></script>
 
-</head>
-<body>
-  <main class="container mt-5">
-    <h1 class="text-center">Login</h1>
-    <form action="/login" method="POST">
-
-      <div class="form-group">
-        <div class="col-md-4 offset-md-4">
-          <input type="text" class="form-control text-center" name="username" placeholder="login">
-        </div>
-      </div>
-
-      <div class="form-group">
-        <div class="col-md-4 offset-md-4">
-          <input type="password" class="form-control text-center" name="password" placeholder="senha">
-        </div>
-      </div>
-
-      <div class="form-group">
-        <div class="col-md-4 offset-md-4">
-          <input type="submit" class="btn btn-primary form-control" value="Login">
-    <% if(message) { %>
-      <p>
-        <label style="color:Red"><%= message %></label>
-      </p>
-    <%}%>
-    <p class="text-center mt-2">
-      <a href="/users/forgot">Esqueceu sua senha?</a> | <a href="/users/signup">Não possui cadastro?</a>
-    </p>
-     </div>
-    </div>
-  </form>
-  </main>
+<script src="assets/js/validation.js"></script>
 </body>
+
 </html>

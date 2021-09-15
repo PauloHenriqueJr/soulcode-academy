@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registro</title>
+
+    <!-- CDN CSS Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- CDN jQuery -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.slim.js"></script>
+
+</head>
+<body>
+     <header>
+    <div class="container-fluid" ></div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">
+          <img src="/images/logo.png" class="img-fluid" width=30vw alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="background-image: url('https://mdbcdn.b-cdn.net/img/svg/hamburger2.svg?color=056367');">
+            </span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-lg-end"  id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/login">
+                <i class="fa fa-home" aria-hidden="true"></i>SAIR</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/login">
+                <i class="fa fa-handshake" aria-hidden="true"></i>LOGIN</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+  </header>
+
+      <section class="container mb-5">
+        <div class="row">
+            <div class="col">
+                <h1 class="mt-5">Cadastrar</h1>
+                <form action="/register" method="POST">
+                    <div class="form-group">
+                        <label>Nome do Usuario</label>
+                        <input type ="text" id = 'username' name="username" placeholder="mineiro" class="form-control" required>
+                    </div>
+                        
+                    <div class="form-group">
+                        <label>E-mail de Cadastro</label>
+                        <input type ="email" id = 'email' name="email" placeholder="soulcode@gmail.com" class="form-control" required>
+                        
+                    </div>
+                    <div class="form-group">
+                        <label>Senha de acesso</label>
+                        <input type="password" id = "password" name="password" class="form-control" required>
+                    </div> 
+                        <button class="btn btn-danger" type ="reset">Apagar</button>
+                        <button class="btn btn-success" type ="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+       <!-- CDN CSS Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+  integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+<!-- CDN jQuery -->
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.slim.js"></script>
+
+<script src="assets/js/validation.js"></script>
+
+</body>
+</html>

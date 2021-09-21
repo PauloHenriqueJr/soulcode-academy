@@ -1,0 +1,20 @@
+{
+  "name": "school_project",
+  "version": "1.0.0",
+  "description": "school_project to SoulCode Academy",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "devstart": "nodemon app.js"
+  },
+  "author": "\"Paulo Henrique Jr\",",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mongodb": "^4.1.1",
+    "mongoose": "^6.0.4",
+    "mysql-model": "^0.0.2",
+    "sync": "^0.2.5"
+  }
+}

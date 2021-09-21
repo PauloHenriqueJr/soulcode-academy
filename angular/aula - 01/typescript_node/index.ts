@@ -24,5 +24,6 @@
 
   let carro = new Carro("uno",2000,"completo","preto");
   carro.escreverPropriedades();
+  console.log(carro)
 
 

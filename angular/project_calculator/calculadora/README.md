@@ -1,3 +1,9 @@
+
+<h1 align="center">
+    <img src="../calculadora/project_calculator.png" width="450px"></br></br>
+    Calculator Developed in Angular and Bootstrap<br>
+</h1>
+
 # Projeto Angular + Bootstrap
 ## Calculadora
 #### Componentização

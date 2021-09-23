@@ -99,5 +99,5 @@ class User implements UserProps {
 }
 
 let pessoa = new User ("Paulo","Henrique","mineiro","elmineirodev@gmail.com","6646346hdhd",353626363662,428764573527,true);
-
-console.log(pessoa)
+pessoa.setContact(8363625)
+console.log(pessoa.getContact())

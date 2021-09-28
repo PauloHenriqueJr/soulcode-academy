@@ -1,0 +1,68 @@
+<div class="container-fluid">
+
+  <form #formLivro="ngForm">
+    <div class="form-group">
+      <label for="titulo">Titulo</label>
+      <input type="text" class="form-control" id="titulo" name="titulo" #titulo="ngModel"
+      [(ngModel)]="livro.titulo" minlength="4" required>
+      <div class="alert alert-danger" *ngIf="titulo.errors && (titulo.dirty || titulo.touched)">
+        <div [hidden]= "!titulo.errors.required">
+          Digite o Título.
+        </div>
+        <div [hidden]= "!titulo.errors.minlength">
+          O título deve conter ao menos 4 caracteres.
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="autor">Autor</label>
+      <input type="text" class="form-control" id="autor" name="autor" #autor="ngModel"
+      [(ngModel)]="livro.autor" minlength="5" required>
+      <div class="alert alert-danger" *ngIf="autor.errors && (autor.dirty || autor.touched)">
+        <div [hidden]= "!autor.errors.required">
+          Digite o nome do Autor.
+        </div>
+        <div [hidden]= "!autor.errors.minlength">
+          O nome do Autor deve conter ao menos 5 caracteres.
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="ano">Ano</label>
+      <input type="number" class="form-control" id="ano" name="ano" #ano="ngModel"
+      [(ngModel)]="livro.ano" minlength="4" maxlength="4" required>
+      <div class="alert alert-danger" *ngIf="ano.errors && (ano.dirty || ano.touched)">
+        <div [hidden]= "!ano.errors.required">
+          Digite o ano do Livro.
+        </div>
+        <div [hidden]= "!ano.errors.minlength">
+          O ano deve conter 4 caracteres.
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="editora">Editora</label>
+      <input type="text" class="form-control" id="editora" name="editora" #editora="ngModel"
+      [(ngModel)]="livro.editora" minlength="4" required>
+      <div class="alert alert-danger" *ngIf="editora.errors && (editora.dirty || editora.touched)">
+        <div [hidden]= "!editora.errors.required">
+          Digite a Editora.
+        </div>
+        <div [hidden]= "!editora.errors.minlength">
+          A Editora deve conter ao menos 4 caracteres.
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group text-center">
+      <input type="submit" class="btn btn-success" (click)="cadastrar()" value="Cadastrar" [disabled]="!formLivro.form.valid">
+      <a class="btn btn-light" [routerLink]= "['/livros']">
+        <i class="bi bi-chevron-left"></i> Voltar
+      </a>
+    </div>
+  </form>
+
+</div>

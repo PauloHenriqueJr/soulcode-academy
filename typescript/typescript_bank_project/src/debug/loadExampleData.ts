@@ -1,4 +1,3 @@
-// Mock Data
 
 import Client from '../models/Client';
 import User from '../models/User';

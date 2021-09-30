@@ -1,8 +1,7 @@
-
-  <nav class="navbar navbar-inverse" style="background: rgba(0, 0, 0, 0.664); color:white;" role="navigation">
+<nav class="navbar navbar-inverse" role="navigation">
     <div class="container">
       <div class="navbar-header">
-        <a routerLink="/" routerLinkActive="active" class="navbar-brand" [routerLink]="['/']">Gerenciador de Tarefas</a>
+        <a routerLink="/criar" routerLinkActive="active" class="navbar-brand">Cadastro de Pacientes</a>
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-app">
           <span class="sr-only">Mostra/Esconde a navegação</span>
           <span class="icon-bar"></span>
@@ -12,8 +11,8 @@
       </div>
       <div class="collapse navbar-collapse" id="header-app">
         <ul class="nav navbar-nav">
-          <li><a [routerLink]="['tarefas/cadastrar']"routerLinkActive="active">Criar tarefa</a></li>
-          <li><a [routerLink]="['tarefas/listar']" routerLinkActive="active">Lista de tarefas</a></li>
+          <li><a routerLink="/criar" routerLinkActive="active">Criar paciente</a></li>
+          <li><a routerLink="/lista" routerLinkActive="active">Lista de pacientes</a></li>
           <li>
             <a
               target="_blank"
@@ -22,7 +21,6 @@
             >
               Github
 
-
             </a>
           </li>
         </ul>
@@ -30,4 +28,3 @@
     </div>
   </nav>
   <router-outlet></router-outlet>
-

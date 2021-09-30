@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+:root {
+    --primary-color: #204987;
+    --secondary-color: #f8d117;
+    --fundo-body: #c1c1c1;
+    --GREEN: #f3f3f3;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #f8d117;
+    
+}
+/* CAMPOS LOGIN */
+input{
+    width: 14vw;
+    height: 7vh;
+    margin-top: .8rem;
+}
+
+
+/* LOGO */
+#logo {
+    content: url(../images/SOUlBRASILpq.png);
+    width: 20%;
+    height: 20%;
+}
+
+/* MAIN */
+.stronger {
+    font-weight: 900;
+}
+
+.index-main {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.a-link {
+    text-decoration: none;
+    margin: 0 1.5rem;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3vh;
+    margin-top: 2vh;
+    
+}
+
+.header-container {
+    width: 100vw;
+    height: 90vh;
+}
+main{
+    background-color: var(--fundo-body);
+    width: 100%;
+    height: 105vh;
+}
+
+#boxmain{
+    padding-top: 14vh;
+    background-color: #c1c1c1;
+    position: absolute;
+}
+
+#boxmain img{
+   height: 63vh;
+   width: auto;
+   position: relative;
+}
+
+h3,
+h2 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-style: italic;
+}
+
+/* IMAGEM DE FUNDO */
+
+.hero {
+    width: 100vw;
+    height: 88vh;
+    background: url(../images/Fundo\ azul.jpg) center no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    
+}
+
+.h-container {
+    width: 55vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30vh;
+    margin-left: 20vw;
+    z-index: 99;
+    
+}
+.head-h1,
+.head-h2 {
+    color: white
+}
+
+/* Footer*/
+
+footer {
+    padding-bottom: 0;
+    padding-top: 4vh;
+    
+}
+
+a {
+    text-decoration: none;
+    color: #f8d117;
+}
+.bg-dark-light {
+    background: #323232 !important;
+}
+.bg-theme, .bg-dark, .bg-dark-light, .bg-secondary {
+    color: #ffffff;
+}
+.widgets.footer-widgets .widget-title {
+    color: #ffffff;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.widgets.footer-widgets .widget-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100px;
+    background: #13bfb1;
+}
+.widgets.footer-widgets .widget-quick-links ul {
+    margin-top: -4px;
+}
+.widgets.footer-widgets .single-widget ul {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.widgets.footer-widgets .widget-quick-links ul li {
+    display: block;
+}
+.widgets.footer-widgets .widget-quick-links ul li a {
+    display: block;
+    font-size: 13px;
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 9px 0;
+}
+
+.widgets.footer-widgets .single-widget ul li {
+    list-style: none;
+    font-family: "Raleway", sans-serif;
+}
+.widgets.footer-widgets .widget-contact ul li {
+    color: #000;
+    font-size: 13px;
+    color: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.widgets.footer-widgets .widget-contact ul li span {
+    font-size: 14px;
+    color: #ffffff;
+    border: 2px solid #cccccc;
+    border-radius: 3px;
+    height: 32px;
+    width: 32px;
+    display: inline-block;
+    line-height: 28px;
+    text-align: center;
+    margin-right: 20px;
+}
+.widgets.footer-widgets .widget-contact ul li.phone, .widgets.footer-widgets .widget-contact ul li.fax {
+    font-size: 15px;
+}
+
+.widgets.footer-widgets .widget-contact ul li + li {
+    margin-top: 20px;
+}
+
+/* Fim da estilização do Footer */
+
+@media (min-width: 576px) { };
+
+@media (min-width: 768px) { };
+
+@media (min-width: 992px) { };
+
+@media (min-width: 1200px) { };

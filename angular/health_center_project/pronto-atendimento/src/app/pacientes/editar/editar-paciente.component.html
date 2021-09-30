@@ -1,24 +1,25 @@
-<h1>Cadastrar tarefa</h1>
 
-<div class="well" style="background: rgb(0,0,0,0.664); color:white;">
-  <form #formTarefa="ngForm">
+<h1>Editar paciente</h1>
+
+<div class="well">
+  <form #formpaciente="ngForm">
     <div class="form-group">
-      <label for="nome">Tarefa:</label>
+      <label for="nome">paciente:</label>
       <input
         type="text"
         class="form-control"
         id="nome"
         name="nome"
-        [(ngModel)]="tarefa.nome"
+        [(ngModel)]="paciente.nome"
         #nome="ngModel"
         minlength="5"
         required>
       <div *ngIf="nome.errors && (nome.dirty || nome.touched)" class="alert alert-danger">
         <div [hidden]="!nome.errors.required">
-          Digite a tarefa.
+          Digite o paciente.
         </div>
-        <div [hidden]="!nome.errors.minlength">
-          A tarefa deve conter ao menos 5 caracteres.
+        <div [hidden]="!nome.errors.minlength" >
+          O paciente deve conter ao menos 5 caracteres.
         </div>
       </div>
     </div>
@@ -26,10 +27,10 @@
       <input
         type="submit"
         class="btn btn-success"
-        (click)="cadastrar()"
-        value="Cadastrar"
-        [disabled]="!formTarefa.form.valid">
-      <a [routerLink]="['/tarefas']"
+        (click)="atualizar()"
+        value="Atualizar"
+        [disabled]="!formPaciente.form.valid">
+      <a [routerLink]="['/pacientes']"
         class="btn btn-default">
         <span class="glyphicon glyphicon-chevron-left"
           aria-hidden="true"></span> Voltar

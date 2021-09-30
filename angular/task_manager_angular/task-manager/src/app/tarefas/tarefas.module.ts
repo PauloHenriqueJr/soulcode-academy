@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { TarefaService, TarefaConcluidaDirective } from './shared';
 import { ListarTarefaComponent } from './listar';
 import { CadastrarTarefaComponent } from './cadastrar';
+import { EditarTarefaComponent } from './editar';
 
 
 
@@ -13,7 +14,7 @@ import { CadastrarTarefaComponent } from './cadastrar';
   declarations: [
     ListarTarefaComponent,
     CadastrarTarefaComponent,
-    // EditarTarefasComponent,
+    EditarTarefaComponent,
     TarefaConcluidaDirective
   ],
   imports: [

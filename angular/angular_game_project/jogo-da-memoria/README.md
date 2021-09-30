@@ -1,17 +1,4 @@
-<h1 align="center">
-    <img src="./project_tic_tac_toe.png" width="600px"></br></br>
-    TicTacToe Developed in Angular<br>
-</h1>
-
-# Projeto Angular + Bootstrap
-# JogoDaVelha
-#### Componentização
-#### Modularização
-#### Services
-#### Documentação
-
-**Faça o clone do projeto, entre na pasta e digite:**
-> `npm install`
+# JogoDaMemoria
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6.
 

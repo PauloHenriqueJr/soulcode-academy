@@ -2,7 +2,7 @@ import { Directive, HostListener, ElementRef } from '@angular/core';
 import { NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms';
 
 @Directive({
-  selector: '[appNumero]',
+  selector: '[numeroDirective]',
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,
@@ -12,6 +12,7 @@ import { NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms';
   ]
 })
 export class NumeroDirective implements ControlValueAccessor {
+
   onTouched: any;
   onChange: any;
 

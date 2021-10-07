@@ -1,9 +1,7 @@
 import { Injectable } from "@angular/core";
 import { Moeda } from "../models";
 
-@Injectable({
-  providedIn: "root"
-})
+@Injectable()
 export class MoedaService {
   private moedas: Moeda[];
 

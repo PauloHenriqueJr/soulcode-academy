@@ -1,0 +1,50 @@
+<div class="outer">
+  <h1>{{ title}}</h1>
+
+  <form>
+    <div class="form-element">
+      <label for="input_tmp">Graus</label>
+      <input type="number" name="valor" [(ngModel)]="conversao.valor" placeholder="0">
+    </div>
+
+    <div class="form-element">
+      <label for="type_tmp">Tipo</label>
+      <select name="tipoConversao" [(ngModel)]="conversao.tipo" required>
+      <option value="">
+          Selecione a conversão
+      </option>
+      <option value="celsius-fahrenheit">
+        Celsius => Fahrenheit
+      </option>
+      <option value="celsius-kelvin">
+        Celsius => Kelvin
+      </option>
+      <option value="kelvin-fahrenheit">
+        Kelvin => Fahrenheit
+     </option>
+     <option value="kelvin-celsius">
+        Kelvin => Celsius
+     </option>
+     <option value="fahrenheit-celsius">
+        Fahrenheit => Celsius
+     </option>
+     <option value="fahrenheit-kelvin">
+        Fahrenheit => Kelvin
+     </option>
+    </select>
+    </div>
+
+    <button (click)="converter()">Converter</button>
+  </form>
+
+  <div>
+    <p>Resultado</p>
+    <p id="ans">O resultado da conversão solicitada é: {{msg}} <span *ngIf="temperaturaConvertida != ''">
+
+    </span>
+
+    </p>
+  </div>
+
+
+</div>

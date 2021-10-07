@@ -1,0 +1,26 @@
+div {
+  background-color: #ffffff;
+  color: #218838;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction:  column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9em;
+}
+
+.overview{
+  margin-bottom: 10px;
+}
+
+hr{
+  background-color: #00000081;;
+  border: none;
+  height: 1px;
+  width: 60%;
+  margin: 10px 0 20px;
+}
+
+p{
+  padding: 4px;
+}

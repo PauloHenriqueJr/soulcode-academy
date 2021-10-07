@@ -6,7 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 
 import { AppComponent } from "./app.component";
-import { ConversorModule } from "./conversor";
+import { ConversorModule, MoedaService } from "./conversor";
 
 @NgModule({
   declarations: [AppComponent],
@@ -17,7 +17,7 @@ import { ConversorModule } from "./conversor";
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [MoedaService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

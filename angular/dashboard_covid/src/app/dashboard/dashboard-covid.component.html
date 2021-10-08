@@ -1,0 +1,21 @@
+<section class="screen">
+<h1>Registre os casos de Covid abaixo</h1>
+<form #myform="ngForm">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3">
+                <select name="month" id="month" [(ngModel)]="selected_month">
+                    <option *ngFor="let informacao of casosMensais" [value]="informacao.month">
+                        {{informacao.month}}
+                    </option>
+                </select><br>
+                <input type="number" name="cases" id="cases" placeholder="Casos" [(ngModel)]="cases"
+                    (keyup)="atualizaNovosCasos()">
+            </div>
+            <div class="col-lg-9">
+                <div id="pie_chart"></div>
+            </div>
+        </div>
+    </div>
+</form>
+</section>

@@ -1,0 +1,31 @@
+.page {
+  color: white;
+  padding: 0 1rem;
+  background: #f1f5f9;
+  &__button {
+    background-color: #26a69a;
+    color: white;
+    border: 0;
+    box-shadow: 2px 2px 1px black;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+  }
+  &__box {
+    min-height: 7.5rem;
+    background: #26a69a;
+    margin: 0 -1rem;
+    font-size: 2.1rem;
+  }
+  &__content {
+    min-height: calc(90vh - 11rem);
+    border-radius: 0.6rem;
+    margin-top: -3.6rem;
+    background: white;
+    color: black;
+    font-size: -1rem;
+    &-data {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

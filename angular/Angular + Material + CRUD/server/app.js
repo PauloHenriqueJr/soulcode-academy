@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.urlencoded({extend:true}));
 app.use(cors());
 
-mongoose.connect("mongodb+srv://paulo_henrique:paulo_henrique@cluster0.kypul.mongodb.net/aplic?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect("MONGODB_HERE", { useNewUrlParser: true, useUnifiedTopology: true })
 
 app.use('/departments', department_controller);
 app.use('/products', product_controller);
